@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,UAAQ;EACN,WAAW,ECIM,KAAK;EDHtB,SAAS,EAAE,IAAI",
+"sources": ["partials/_headers.scss","partials/_base.scss"],
+"names": [],
+"file": "main.css"
+}
