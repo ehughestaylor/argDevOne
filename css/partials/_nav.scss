@@ -1,0 +1,46 @@
+@import "base";
+
+//logo
+.brand-logo{
+  img{
+    height:91px;
+    // padding: 5px;
+    margin-left: 34px;
+  }
+  .small-logo{
+    height: 70px;
+  }
+}
+
+//nav
+nav{
+  font-family: $header-font-family;
+  font-weight: $regular;
+  box-shadow: none;
+  background-color:transparent;
+}
+nav ul a{
+  color:$navy;
+  font-size:14px;
+}
+
+.bluenav{
+  background-color: $turq;
+  ul a{
+    color:white;
+  }
+}
+
+.navbar-fixed{
+  height:0;
+}
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
