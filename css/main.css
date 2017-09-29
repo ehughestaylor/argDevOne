@@ -1,5 +1,212 @@
-h1, h2, h3 {
-  font-family: serif;
-  font-size: 18em; }
+.button-c.hvr-sweep-to-bottom:before {
+  background-color: #00274D; }
+
+.button-w.hvr-sweep-to-bottom:before {
+  background-color: #FFB700; }
+
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00AFAC;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Heebo", sans-serif;
+  text-transform: none;
+  border-radius: 0; }
+
+.button-c {
+  width: 153px;
+  height: 55px;
+  border: 2px solid #00274D;
+  line-height: 51px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
+  color: #00274D;
+  cursor: pointer;
+  text-align: center; }
+
+.button-w {
+  width: 153px;
+  height: 55px;
+  border: 2px solid white;
+  line-height: 51px;
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
+  color: white;
+  text-align: center; }
+
+.header {
+  font-family: "Heebo", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  display: block; }
+
+.brand-logo img {
+  height: 91px;
+  margin-left: 34px; }
+.brand-logo .small-logo {
+  height: 70px; }
+
+nav {
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  box-shadow: none;
+  background-color: transparent; }
+
+nav ul a {
+  color: #00274D;
+  font-size: 14px; }
+
+.bluenav {
+  background-color: #00AFAC; }
+  .bluenav ul a {
+    color: white; }
+
+.navbar-fixed {
+  height: 0; }
+
+nav.nav-center ul {
+  text-align: center; }
+
+nav.nav-center ul li {
+  display: inline;
+  float: none; }
+
+nav.nav-center ul li a {
+  display: inline-block; }
+
+.jumbotron-h1 {
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Heebo", sans-serif;
+  color: #00AFAC;
+  text-decoration: underline; }
+
+.jumbo-sub {
+  font-family: "PT Serif", serif;
+  font-size: 44px;
+  color: #FFB700; }
+
+.jumbo-sub-two {
+  font-family: "PT Serif", serif;
+  font-size: 26px;
+  color: #00274D;
+  font-style: italic; }
+
+.parallax-container {
+  height: 700px; }
+
+#index-banner .section {
+  width: 100%; }
+
+#news-banner {
+  position: relative;
+  background-color: #FFB700; }
+  #news-banner .fa {
+    font-size: 38px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: -19px;
+    color: #00274D; }
+  #news-banner .card.small {
+    height: 220px; }
+    #news-banner .card.small .card-title {
+      font-size: 14px; }
+  #news-banner .card .card-content .card-title {
+    display: block;
+    text-align: left;
+    line-height: 23px;
+    margin-bottom: 0px; }
+  #news-banner .card-category {
+    font-size: 10px;
+    color: #00AFAC;
+    font-style: italic;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 8px;
+    left: 10px; }
+  #news-banner .card.small .card-image, #news-banner .card.medium .card-image, #news-banner .card.large .card-image {
+    max-height: none;
+    overflow: hidden; }
+  #news-banner .card.small .card-image {
+    height: 100%; }
+  #news-banner .card-content {
+    background-color: rgba(0, 39, 77, 0.5);
+    height: 82px;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    width: 100%; }
+  #news-banner .card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 270px; }
+  #news-banner .card .card-reveal {
+    padding: 24px;
+    position: absolute;
+    background-color: #00274D;
+    color: white;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 5;
+    display: none;
+    font-family: "Heebo", sans-serif; }
+    #news-banner .card .card-reveal h5 {
+      font-weight: 700; }
+  #news-banner .close-card {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    /* float: right; */
+    text-align: right;
+    font-size: 18px; }
+
+#about-banner {
+  position: relative;
+  background-color: #00AFAC; }
+  #about-banner i.fa.fa-chevron-up {
+    width: 100%;
+    position: absolute;
+    top: -46px;
+    text-align: center;
+    font-size: 90px;
+    color: #00AFAC; }
+  #about-banner .acnj {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: #00274D;
+    position: relative;
+    z-index: 1; }
+  #about-banner .text-para {
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    position: relative;
+    z-index: 1; }
+  #about-banner .greyTriangle {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0; }
 
 /*# sourceMappingURL=main.css.map */
