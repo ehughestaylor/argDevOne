@@ -55,9 +55,16 @@
 
 .header {
   font-family: "Heebo", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 400;
   display: block; }
+
+.text-para p {
+  font-size: 15px;
+  margin-bottom: 1.8em; }
+
+.para {
+  font-size: 15px; }
 
 .brand-logo img {
   height: 91px;
@@ -92,6 +99,11 @@ nav.nav-center ul li {
 
 nav.nav-center ul li a {
   display: inline-block; }
+
+.big-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 82%; }
 
 .jumbotron-h1 {
   font-size: 64px;
@@ -221,10 +233,8 @@ nav.nav-center ul li a {
     top: 0;
     right: 0;
     z-index: 0; }
-  #about-banner #bottomSectionAbout .big-container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 82%; }
+  #about-banner #bottomSectionAbout h1 {
+    color: #00274D; }
   @media only screen and (min-width: 601px) {
     #about-banner #bottomSectionAbout .big-container {
       width: 85%; } }
@@ -237,7 +247,7 @@ nav.nav-center ul li a {
     padding: 1em;
     background-color: #028F8C;
     font-family: "PT Serif", serif;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     font-weight: 400; }
   #about-banner #bottomSectionAbout .ico-group {
@@ -262,5 +272,147 @@ nav.nav-center ul li a {
       margin: 5px;
       font-size: 23px;
       border-radius: 100%; }
+
+#target-industries-banner .carousel .indicators .indicator-item {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 24px 4px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  border-radius: 50%; }
+
+#target-industries-banner {
+  min-height: 500px;
+  position: relative;
+  background-color: #4A4A4A;
+  min-height: 500px; }
+  #target-industries-banner .carousel .indicators .indicator-item {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    color: white;
+    background-color: transparent;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+    border: 1px solid white; }
+  #target-industries-banner .carousel {
+    min-height: 500px; }
+  #target-industries-banner .carousel .indicators {
+    left: auto;
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent; }
+  #target-industries-banner .carousel .indicators .indicator-item {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 24px 4px;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+    border: 1px solid white; }
+  #target-industries-banner .carousel .indicators .indicator-item.active {
+    background-color: #fff; }
+  #target-industries-banner i.fa.fa-chevron-up {
+    width: 100%;
+    position: absolute;
+    top: -46px;
+    text-align: center;
+    font-size: 90px;
+    color: #4A4A4A; }
+  #target-industries-banner .target-industries-header {
+    border-bottom: 3px solid white;
+    margin-top: 0; }
+  #target-industries-banner .industry-image {
+    background-image: url(../img/aviation.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-card {
+    background-color: #4A4A4A;
+    box-shadow: none;
+    min-height: 500px;
+    margin-bottom: 0;
+    padding: 0; }
+    #target-industries-banner .industry-card #industry-title {
+      font-weight: 400; }
+    #target-industries-banner .industry-card .target-industries-slide {
+      background-color: #4A4A4A; }
+    #target-industries-banner .industry-card span {
+      font-family: "PT Serif", serif;
+      letter-spacing: 1.31px;
+      font-size: 18px; }
+    #target-industries-banner .industry-card .icon-row {
+      margin-top: 2rem; }
+      #target-industries-banner .industry-card .icon-row ul {
+        display: block; }
+        #target-industries-banner .industry-card .icon-row ul li {
+          display: inline-block;
+          padding: 0 4px; }
+
+#business-services {
+  background: #00274D;
+  position: relative; }
+  #business-services i.fa.fa-chevron-up {
+    width: 100%;
+    position: absolute;
+    top: -46px;
+    text-align: center;
+    font-size: 90px;
+    color: #00274D; }
+  #business-services .subheader {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Heebo", sans-serif; }
+  #business-services .step-col {
+    opacity: 0.49;
+    cursor: pointer;
+    padding-right: 0; }
+    #business-services .step-col h2 {
+      text-align: left;
+      color: white;
+      font-family: "PT Serif", serif; }
+    #business-services .step-col .stepTitle {
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+      font-weight: bold;
+      font-family: "PT Serif", serif;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+      padding-bottom: 1em;
+      margin-bottom: 0; }
+  #business-services .step-col-active {
+    opacity: 1;
+    cursor: pointer; }
+    #business-services .step-col-active h2 {
+      color: white;
+      text-align: left; }
+    #business-services .step-col-active .stepTitle {
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+      font-weight: bold;
+      font-family: "PT Serif", serif;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+      padding-bottom: 1em;
+      margin-bottom: 0; }
+  @media only screen and (min-width: 601px) {
+    #business-services .row .col.m1 {
+      width: 13.333333%;
+      margin-left: auto;
+      left: auto;
+      right: auto; } }
 
 /*# sourceMappingURL=main.css.map */

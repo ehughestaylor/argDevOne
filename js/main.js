@@ -1,6 +1,11 @@
 $(document).ready(function(){
-  $('.parallax').parallax();
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+  window.setInterval(function(){$('.carousel').carousel('next')},5000)
 
+});
+
+$(document).ready(function(){
+  $('.parallax').parallax();
   var scrollTop = 0;
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
