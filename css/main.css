@@ -100,6 +100,47 @@ nav.nav-center ul li {
 nav.nav-center ul li a {
   display: inline-block; }
 
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 996;
+  will-change: opacity; }
+
+.side-nav {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  height: 100%;
+  height: calc(100% + 60px);
+  height: -moz-calc(100%);
+  padding-bottom: 60px;
+  background-color: #00AFAC;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%); }
+  .side-nav li a {
+    width: 100%; }
+
+.logo-mobile img {
+  height: 55px;
+  margin-left: 0; }
+
+.fa-bars {
+  color: #00274D;
+  font-size: 1.5em; }
+
 .big-container {
   margin: 0 auto;
   max-width: 1200px;
@@ -304,7 +345,8 @@ nav.nav-center ul li a {
     border-radius: 50%;
     border: 1px solid white; }
   #target-industries-banner .carousel {
-    min-height: 500px; }
+    min-height: 500px;
+    max-height: 501px; }
   #target-industries-banner .carousel .indicators {
     left: auto;
     right: 20px;
@@ -464,7 +506,16 @@ nav.nav-center ul li a {
       border-bottom: 1px solid #00274D; }
 
 #real-estate {
-  margin-bottom: 4em; }
+  position: relative;
+  margin-bottom: 4em;
+  min-height: 400px; }
+  #real-estate .greyTri {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  #real-estate .big-container {
+    z-index: 1; }
   #real-estate .header {
     font-weight: 100;
     font-size: 36px; }
@@ -479,13 +530,13 @@ nav.nav-center ul li a {
 #contact-section {
   position: relative; }
   #contact-section i.fa.fa-chevron-up {
-    width: 100%;
     position: absolute;
     top: 30%;
     text-align: center;
     font-size: 90px;
     color: white;
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    left: -49px; }
   #contact-section .contact-row {
     min-height: 215px;
     margin-bottom: 0; }
@@ -517,7 +568,26 @@ nav.nav-center ul li a {
   .page-footer .footer-copyright {
     height: 78px;
     background-color: #00AFAC; }
-    .page-footer .footer-copyright img {
+    .page-footer .footer-copyright a {
+      color: #00274D; }
+    .page-footer .footer-copyright .logo-left {
       height: 78px; }
+    .page-footer .footer-copyright .love {
+      margin-left: 3px; }
+
+@media only screen and (max-width: 600px) {
+  .big-container {
+    width: 100%; }
+
+  .header {
+    text-align: center;
+    font-size: 39px; }
+
+  #index-banner .jumbotron-h1 {
+    font-size: 39px; }
+  #index-banner .jumbo-sub {
+    font-size: 22px; }
+  #index-banner .jumbo-sub-two {
+    font-size: 18px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,7 +26,7 @@
     <div class="navbar-fixed">
       <nav id="#home-nav" class="nav-center" role="navigation">
         <div class="nav-wrapper">
-          <a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" alt="" class="responsive-img"></a>
+          <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
             <li><a href="#">About ACEA</a></li>
             <li><a href="#">Why Atlantic County</a></li>
@@ -44,7 +44,8 @@
             <li><a href="#">Resources & Data</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a id="logo-container" href="#" class="brand-logo logo-mobile hide-on-med-and-up left"><img src="img/logo.png" alt="" class="responsive-img"></a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse right"><i class="fa fa-bars"></i></a>
         </div>
       </nav>
     </div>
@@ -130,7 +131,7 @@
       <div class="section" id="topSectionAbout">
         <i class="fa fa-chevron-up"></i>
         <div class="container">
-          <h5 class="acnj">Atlantic County, NJ</h5>
+          <h5 class="acnj hide-on-med-and-down">Atlantic County, NJ</h5>
           <div class="h1 left-align white-text header">About <u>ACEA</u></div>
           <div class="row">
             <div class="col m8 s12 text-para">
@@ -301,7 +302,8 @@
         </div>
       </div>
 
-      <div id="real-estate">
+      <div class="valign-wrapper" id="real-estate">
+        <img class="greyTri responsive-img" src="img/greyTri.png" alt="">
         <div class="big-container">
           <div class="row">
             <div class="col m5 s12">
@@ -310,22 +312,20 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit officia eum quam amet placeat, iste explicabo. Aliquam maiores cumque quod quae, possimus porro voluptate laborum vitae eligendi voluptates hic.</p>
             </div>
             <div class="col m7 s12">
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
-              <div class="col m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
             </div>
           </div>
         </div>
       </div>
 
       <div id="contact-section">
-        <i class="fa fa-chevron-up"></i>
-
         <div class="row contact-row">
           <div class="">
             <div class="col s12 m6 left-col">
@@ -344,7 +344,9 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m6 white">
+            <div class="col s12 m6 white" style="position:relative;">
+              <i class="fa fa-chevron-up"></i>
+
               <div class="row row-right valign-wrapper">
                 <div class="col s12 m6"><img class="responsive-img" src="img/contact.png" alt=""></div>
                 <div class="col s12 m6"><div class="button-c">? Questions</div></div>
@@ -373,9 +375,9 @@
         </div>
       </div>
       <div class="footer-copyright">
-        <img class="responsive-img" src="img/logo.png" alt="">
+        <img class="responsive-img logo-left" src="img/logo.png" alt="">
         <div class="big-container">
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <a class="valign-wrapper right" href="#!">Made with  <img class="love" src="img/love.png" alt=""></a>
         </div>
       </div>
     </footer>
