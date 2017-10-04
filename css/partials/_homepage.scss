@@ -1,13 +1,27 @@
 @import "base";
 
 
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+////////////////////
+
 .big-container {
   margin: 0 auto;
   max-width: 1200px;
   width: 82%;
 }
-
-
 
 //////////////////////////
 /////////////////HOME BANNER TOP
@@ -41,6 +55,9 @@
   }
 }
 
+// MOBILE
+////
+
 //////////////////////////
 /////////////////NEWS
 /////////////////////////
@@ -58,8 +75,9 @@
     color: $navy;
   }
   //card size
+
   .card.small{
-    height:220px;
+    height:auto;
     .card-title{
       font-size:14px;
     }
@@ -94,6 +112,7 @@
     bottom:0;
     z-index: 4;
     width:100%;
+    padding-bottom: 4em;
   }
   .card .card-image img {
       display: block;
@@ -104,11 +123,11 @@
       top: 0;
       bottom: 0;
       width: 100%;
-      height: 270px;
+      // height: 270px;
   }
   //card reveal
   .card .card-reveal {
-      padding: 24px;
+      padding: 10px;
       position: absolute;
       background-color: $navy;
       color:white;
@@ -266,6 +285,7 @@
 }
   .carousel{
     min-height: 500px;
+    max-height: 501px;
   }
   .carousel .indicators{
     left: auto;
@@ -358,10 +378,15 @@
     font-weight: $subhead-font-weight;
     font-family: $subhead-font-family;
   }
+  .step-group{
+    position: relative;
+    margin: 0;
+  }
   .step-col{
     opacity: 0.49;
     cursor: pointer;
     padding-right: 0;
+    width: 14.28%;
     h2{
       text-align: left;
       color: white;
@@ -378,8 +403,7 @@
       border-bottom:1px solid white;
       padding-bottom: 1em;
       margin-bottom: 0;
-
-
+      min-height: 65px;
     }
   }
   .step-col-active{
@@ -402,20 +426,229 @@
 
     }
   }
-
-
-
-
-
-
-
-  @media only screen and (min-width: 601px){
-    .row .col.m1 {
-        width: 13.333333%;
-        margin-left: auto;
-        left: auto;
-        right: auto;
+  .step-desc{
+    margin-top: 2em;
+    h5{
+      color:white;
+      font-family: $header-font-family;
+      font-size: 11px;
+      font-weight: 100;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #FFF;
+    }
+    p{
+      color:white;
+      font-family: $base-font-family;
     }
   }
+  #download-pdf{
+    float: left;
+    margin: 1em 0;
+    background-color:$turq;
+    color:$navy;
+    cursor: pointer;
+  }
+  .graphic{
+    position: absolute;
+    right: 0;
+    bottom:-6px;
+    max-width: 50%;
+  }
 
+
+  // @media only screen and (min-width: 601px){
+  //   .row .col.m1 {
+  //       width: 13.333333%;
+  //       margin-left: auto;
+  //       left: auto;
+  //       right: auto;
+  //   }
+  // }
+
+}
+
+
+///////////////////////////////////
+////////////DATA SECTION
+//////////////////////////////////
+
+#data-section{
+  position: relative;
+  background-color: white;
+  min-height: 400px;
+  .data-row{
+    .tabs{
+      height: auto;
+      .tab{
+        height: auto;
+      }
+    }
+    h1{
+      background-color: #00274D;
+      text-align: center;
+      color: white;
+      height: 130px;
+      line-height: 130px;
+      border-radius: 100%;
+      width: 130px;
+    }
+  }
+  i.fa.fa-chevron-up{
+    width: 100%;
+    position: absolute;
+    top: -68px;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+  }
+  h3.header{
+    padding-top: 2em;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.4em;
+    a{
+      color:$navy;
+      border-bottom: 1px solid $navy;
+    }
+  }
+}
+
+
+
+
+#real-estate{
+  position: relative;
+  margin-bottom: 4em;
+  min-height: 400px;
+  .greyTri{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  .big-container{
+    z-index: 1;
+  }
+  .header{
+    font-weight: 100;
+    font-size: 36px;
+    i{
+      font-style: normal;
+      border-bottom:1px solid black;
+    }
+  }
+  .listing{
+    cursor: pointer;
+    .top-right{
+      position: absolute;
+    }
+  }
+}
+
+#contact-section{
+  // background-color: $blue;
+  i.fa.fa-chevron-up{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+    transform: rotate(-90deg);
+    left: -49px;
+  }
+  position: relative;
+  .contact-row{
+    // background-color:$blue;
+    min-height: 215px;
+    margin-bottom: 0;
+  }
+  .left-col{
+    padding: 0;
+  }
+  .row-left{
+    background-color:$blue;
+    margin-bottom: 0;
+  }
+  h1.header{
+    line-height: 215px;
+    color: white;
+  }
+  .social-icon{
+    font-size: 24px;
+    padding: 0
+  }
+}
+
+.page-footer{
+  padding-top: 0;
+  background-color: $navy;
+
+  .row{
+    margin-bottom: 0;
+  }
+  .foot-links{
+    text-align: right;
+    margin-right: 10px;
+    li{
+      display: inline-block;
+      margin-left: 2em;
+      a{
+        color: white;
+      }
+    }
+  }
+  .footer-copyright{
+    a{
+      color:$navy;
+    }
+    .logo-left{
+      height: 78px;
+    }
+    .love{
+      margin-left: 3px;
+    }
+    height: 78px;
+    background-color: $turq;
+  }
+}
+
+
+
+@media #{$small-and-down} {
+  .big-container {
+    width: 100%;
+  }
+  .header{
+    text-align: center;
+    font-size: $mobile-header-font-size;
+  }
+  // top section
+  #index-banner{
+    .jumbotron-h1{
+      font-size: $mobile-header-font-size;
+    }
+    .jumbo-sub{
+      font-size: $mobile-sub-header-font-size;
+    }
+    .jumbo-sub-two{
+      font-size: $mobile-sub-two-header-font-size;
+    }
+  }
+  //target industries
+  #target-industries-banner{
+    min-height: 200px;
+    #target-industries-button{
+      margin: 0 auto;
+      display: block;
+      background-color: transparent;
+      border:1px solid white;
+      color:white;
+      width: auto;
+      padding: 0 1em;
+    }
+  }
+  // business services
+  #business-services .step-col {
+    width: 50%;
+  }
 }

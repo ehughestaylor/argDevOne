@@ -11,6 +11,7 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700,800,900" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -25,7 +26,7 @@
     <div class="navbar-fixed">
       <nav id="#home-nav" class="nav-center" role="navigation">
         <div class="nav-wrapper">
-          <a id="logo-container" href="#" class="brand-logo"><img src="img/logo.png" alt="" class="responsive-img"></a>
+          <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
             <li><a href="#">About ACEA</a></li>
             <li><a href="#">Why Atlantic County</a></li>
@@ -43,7 +44,8 @@
             <li><a href="#">Resources & Data</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          <a id="logo-container" href="#" class="brand-logo logo-mobile hide-on-med-and-up left"><img src="img/logo.png" alt="" class="responsive-img"></a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse right"><i class="fa fa-bars"></i></a>
         </div>
       </nav>
     </div>
@@ -129,7 +131,7 @@
       <div class="section" id="topSectionAbout">
         <i class="fa fa-chevron-up"></i>
         <div class="container">
-          <h5 class="acnj">Atlantic County, NJ</h5>
+          <h5 class="acnj hide-on-med-and-down">Atlantic County, NJ</h5>
           <div class="h1 left-align white-text header">About <u>ACEA</u></div>
           <div class="row">
             <div class="col m8 s12 text-para">
@@ -148,7 +150,7 @@
       <div class="section" id="bottomSectionAbout">
         <div class="big-container">
           <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m6" style="padding:0;">
               <img src="img/homepage-map.png" alt="" class="responsive-img ac-map">
             </div>
             <div class="col s12 m6">
@@ -157,25 +159,13 @@
                 <div class="icon-section">
                   <div class="nav-wrapper">
                     <ul id="why-ac-icons">
-                      <div class="ico-group healthcare">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-ambulance"></i></a></li>
-                        <p>health care</p>
-                      </div>
                       <div class="ico-group education">
                         <li class="hvr-grow"><a href=""><i class="fa white-text fa-book"></i></a></li>
-                        <p>education</p>
+                        <p>higher education</p>
                       </div>
                       <div class="ico-group quality">
                         <li class="hvr-grow"><a href=""><i class="fa white-text fa-thumbs-up"></i></a></li>
                         <p>quality of life</p>
-                      </div>
-                      <div class="ico-group stats">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-bar-chart"></i></a></li>
-                        <p>stats</p>
-                      </div>
-                      <div class="ico-group workforce">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-wrench"></i></a></li>
-                        <p>workforce</p>
                       </div>
                     </ul>
                   </div>
@@ -191,7 +181,9 @@
 
     <div id="target-industries-banner" class="valign-wrapper">
       <i class="fa fa-chevron-up"></i>
-      <div class="carousel carousel-slider" data-indicators="true">
+      <a href="#" id="target-industries-button" class="button-c waves-effect hvr-shadow hide-on-med-and-up">Target Industries</a>
+
+      <div class="carousel carousel-slider hide-on-small-and-down" data-indicators="true">
         <div class="carousel-item target-industries-slide white-text" href="#one!">
           <div class="row" style="margin-bottom:0; padding:0;" >
             <div style="padding:0;" class="col m5">
@@ -249,35 +241,143 @@
         </div>
       </div>
     </div>
-  </div>
 
 
 
-        <div id="business-services">
-          <i class="fa fa-chevron-up"></i>
-          <div class="row">
-            <div class="col s12 m12">
-              <div class="big-container">
-                <h1 class="header white-text">Business Services</h1>
-                <h5 class="subheader white-text"><i>What can we do for <u>you</u></i></h5>
-              </div>
-              <div class="center-align">
-                <div class="row center-align step-group">
-                  <div class="col m1 offset-m1 s6 step-col step-col-active hvr-bounce-to-top"><h2 class="number">1</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">2</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">3</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">4</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">5</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">6</h2><h2 class="stepTitle">Hello World</h2></div>
-                  <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">7</h2><h2 class="stepTitle">Hello World</h2></div>
-
+    <div id="business-services">
+      <i class="fa fa-chevron-up"></i>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="big-container">
+            <h1 class="header white-text">Business Services</h1>
+            <h5 class="subheader white-text"><i>What can we do for <u>you</u></i></h5>
+          </div>
+            <div class="row center-align step-group">
+              <div class="col m1 step-col s6 step-col-active hvr-bounce-to-top step-one"><h2 class="number">1</h2><h2 class="stepTitle step-title-one">Site Selection</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-two"><h2 class="number">2</h2><h2 class="stepTitle step-title-two">Permits & Regulations</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-three"><h2 class="number">3</h2><h2 class="stepTitle step-title-three">Networking</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-four"><h2 class="number">4</h2><h2 class="stepTitle step-title-four">Data Requests</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-five"><h2 class="number">5</h2><h2 class="stepTitle step-title-five">Workforce assitance</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-six"><h2 class="number">6</h2><h2 class="stepTitle step-title-six">Financing assistance</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-seven"><h2 class="number">7</h2><h2 class="stepTitle step-title-seven">Promote your success</h2></div>
+            </div>
+            <div class="big-container">
+              <div class="row step-desc">
+                <div class="col m4 s12">
+                  <h5 class="subhead">Site Selection</h5>
+                  <p class="about-service">The ACEA provides prompt response and identification of available commercial, office, industrial and developable land requests tailored to your specifications and requirements.  The ACEA acts as your liaison with brokers for follow up information requests while maintaining strict confidentiality until your firm is ready to engage in actual site visits.  Our staff is available to accompany you on site visits and provide insight and assistance throughout the process.</p>
+                  <div id="download-pdf" class="button-solid">PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
+                </div>
+                <div class="graphic">
+                  <img class="responsive-img" src="img/building-vector2.png" alt="">
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
+      </div>
+
+      <div id="data-section" class="valign-wrapper">
+        <i class="fa fa-chevron-up"></i>
+        <div class="container">
+          <div class="row data-row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s12 m3"><a href="#test1"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a class="active" href="#test2"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a href="#test3"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a href="#test4"><h1>#1</h1></a></li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12 center-align">Test 1</div>
+            <div id="test2" class="col s12 center-align">Test 2</div>
+            <div id="test3" class="col s12 center-align">Test 3</div>
+            <div id="test4" class="col s12 center-align">Test 4</div>
+            <h3 class="header center"><a href="#">Dept. of Labor & Workforce Data</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="valign-wrapper" id="real-estate">
+        <img class="greyTri responsive-img" src="img/greyTri.png" alt="">
+        <div class="big-container">
+          <div class="row">
+            <div class="col m5 s12">
+              <h5 class="real-estate"><u>Real Estate</u></h5>
+              <h1 class="header">Your business will <i>soar</i></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit officia eum quam amet placeat, iste explicabo. Aliquam maiores cumque quod quae, possimus porro voluptate laborum vitae eligendi voluptates hic.</p>
+            </div>
+            <div class="col m7 s12">
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+              <div class="col s6 m3 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/real1.png" alt="" class="responsive-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-section">
+        <div class="row contact-row">
+          <div class="">
+            <div class="col s12 m6 left-col">
+              <div class="row-left row">
+                <div class="col s12 m6">
+                  <h1 class="header center-align">Contact Us</h1>
+                </div>
+                <div class="col s12 m6">
+                  <h1 class="header center-align">
+                    <a class="white-text social-icon" href=""><i class="fa fa-phone"></i></a>
+                    <a class="white-text social-icon" href=""><i class="fa fa-facebook"></i></a>
+                    <a class="white-text social-icon" href=""><i class="fa fa-linkedin"></i></a>
+                    <a class="white-text social-icon" href=""><i class="fa fa-envelope-o"></i></a>
+
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 white" style="position:relative;">
+              <i class="fa fa-chevron-up"></i>
+
+              <div class="row row-right valign-wrapper">
+                <div class="col s12 m6"><img class="responsive-img" src="img/contact.png" alt=""></div>
+                <div class="col s12 m6"><div class="button-c">? Questions</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="page-footer">
+      <div class="">
+        <div class="row">
+          <div class="col l2 s12">
+          </div>
+          <div class="col l8 offset-l2 s12">
+            <ul class="foot-links">
+              <li><a href="#">About ACEA</a></li>
+              <li><a href="#">Why Atlantic County</a></li>
+              <li><a href="#">Target Industries</a></li>
+              <li><a href="#">Business Support</a></li>
+              <li><a href="#">Resources & Data</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <img class="responsive-img logo-left" src="img/logo.png" alt="">
+        <div class="big-container">
+        <a class="valign-wrapper right" href="#!">Made with  <img class="love" src="img/love.png" alt=""></a>
+        </div>
+      </div>
+    </footer>
+
 
 
 

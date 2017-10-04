@@ -24,7 +24,8 @@
     border-radius: 0;
 }
 .button-c{
-  width:153px;
+  width:auto;
+  padding: 0 1em;
   height:55px;
   border:2px solid $navy;
   line-height: 51px;
@@ -37,7 +38,8 @@
   text-align: center;
 }
 .button-w{
-  width:153px;
+  width:auto;
+  padding: 0 1em;
   height:55px;
   border:2px solid white;
   line-height: 51px;
