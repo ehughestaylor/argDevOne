@@ -546,15 +546,17 @@ nav.nav-center ul li a {
     transform: rotate(-90deg);
     left: -49px; }
   #contact-section .contact-row {
-    min-height: 215px;
+    background-color: #0298D9;
     margin-bottom: 0; }
   #contact-section .left-col {
-    padding: 0; }
+    padding: 0;
+    min-height: 241px; }
+  #contact-section .right-col {
+    min-height: 241px; }
   #contact-section .row-left {
     background-color: #0298D9;
     margin-bottom: 0; }
   #contact-section h1.header {
-    line-height: 215px;
     color: white; }
   #contact-section .social-icon {
     font-size: 24px;
