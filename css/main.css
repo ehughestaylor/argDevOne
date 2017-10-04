@@ -19,7 +19,8 @@
   border-radius: 0; }
 
 .button-c {
-  width: 153px;
+  width: auto;
+  padding: 0 1em;
   height: 55px;
   border: 2px solid #00274D;
   line-height: 51px;
@@ -32,7 +33,8 @@
   text-align: center; }
 
 .button-w {
-  width: 153px;
+  width: auto;
+  padding: 0 1em;
   height: 55px;
   border: 2px solid white;
   line-height: 51px;
@@ -182,7 +184,7 @@ nav.nav-center ul li a {
     top: -19px;
     color: #00274D; }
   #news-banner .card.small {
-    height: 220px; }
+    height: auto; }
     #news-banner .card.small .card-title {
       font-size: 14px; }
   #news-banner .card .card-content .card-title {
@@ -210,7 +212,8 @@ nav.nav-center ul li a {
     position: absolute;
     bottom: 0;
     z-index: 4;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 4em; }
   #news-banner .card .card-image img {
     display: block;
     border-radius: 2px 2px 0 0;
@@ -219,10 +222,9 @@ nav.nav-center ul li a {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 100%;
-    height: 270px; }
+    width: 100%; }
   #news-banner .card .card-reveal {
-    padding: 24px;
+    padding: 10px;
     position: absolute;
     background-color: #00274D;
     color: white;
@@ -437,7 +439,8 @@ nav.nav-center ul li a {
       border-right: 1px solid white;
       border-bottom: 1px solid white;
       padding-bottom: 1em;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      min-height: 65px; }
   #business-services .step-col-active {
     opacity: 1;
     cursor: pointer; }
@@ -482,6 +485,10 @@ nav.nav-center ul li a {
   position: relative;
   background-color: white;
   min-height: 400px; }
+  #data-section .data-row .tabs {
+    height: auto; }
+    #data-section .data-row .tabs .tab {
+      height: auto; }
   #data-section .data-row h1 {
     background-color: #00274D;
     text-align: center;
@@ -498,9 +505,10 @@ nav.nav-center ul li a {
     font-size: 90px;
     color: white; }
   #data-section h3.header {
-    padding-top: 1em;
-    font-size: 32px;
-    font-weight: 100; }
+    padding-top: 2em;
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.4em; }
     #data-section h3.header a {
       color: #00274D;
       border-bottom: 1px solid #00274D; }
@@ -588,6 +596,20 @@ nav.nav-center ul li a {
   #index-banner .jumbo-sub {
     font-size: 22px; }
   #index-banner .jumbo-sub-two {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  #target-industries-banner {
+    min-height: 200px; }
+    #target-industries-banner #target-industries-button {
+      margin: 0 auto;
+      display: block;
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      width: auto;
+      padding: 0 1em; }
+
+  #business-services .step-col {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

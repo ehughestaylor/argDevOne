@@ -150,7 +150,7 @@
       <div class="section" id="bottomSectionAbout">
         <div class="big-container">
           <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m6" style="padding:0;">
               <img src="img/homepage-map.png" alt="" class="responsive-img ac-map">
             </div>
             <div class="col s12 m6">
@@ -159,25 +159,13 @@
                 <div class="icon-section">
                   <div class="nav-wrapper">
                     <ul id="why-ac-icons">
-                      <div class="ico-group healthcare">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-ambulance"></i></a></li>
-                        <p>health care</p>
-                      </div>
                       <div class="ico-group education">
                         <li class="hvr-grow"><a href=""><i class="fa white-text fa-book"></i></a></li>
-                        <p>education</p>
+                        <p>higher education</p>
                       </div>
                       <div class="ico-group quality">
                         <li class="hvr-grow"><a href=""><i class="fa white-text fa-thumbs-up"></i></a></li>
                         <p>quality of life</p>
-                      </div>
-                      <div class="ico-group stats">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-bar-chart"></i></a></li>
-                        <p>stats</p>
-                      </div>
-                      <div class="ico-group workforce">
-                        <li class="hvr-grow"><a href=""><i class="fa white-text fa-wrench"></i></a></li>
-                        <p>workforce</p>
                       </div>
                     </ul>
                   </div>
@@ -193,7 +181,9 @@
 
     <div id="target-industries-banner" class="valign-wrapper">
       <i class="fa fa-chevron-up"></i>
-      <div class="carousel carousel-slider" data-indicators="true">
+      <a href="#" id="target-industries-button" class="button-c waves-effect hvr-shadow hide-on-med-and-up">Target Industries</a>
+
+      <div class="carousel carousel-slider hide-on-small-and-down" data-indicators="true">
         <div class="carousel-item target-industries-slide white-text" href="#one!">
           <div class="row" style="margin-bottom:0; padding:0;" >
             <div style="padding:0;" class="col m5">
@@ -263,19 +253,19 @@
             <h5 class="subheader white-text"><i>What can we do for <u>you</u></i></h5>
           </div>
             <div class="row center-align step-group">
-              <div class="col m1 s6 step-col step-col-active hvr-bounce-to-top"><h2 class="number">1</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">2</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">3</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">4</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">5</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">6</h2><h2 class="stepTitle">Hello World</h2></div>
-              <div class="col m1 s6 step-col hvr-bounce-to-top"><h2 class="number">7</h2><h2 class="stepTitle">Hello World</h2></div>
+              <div class="col m1 step-col s6 step-col-active hvr-bounce-to-top step-one"><h2 class="number">1</h2><h2 class="stepTitle step-title-one">Site Selection</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-two"><h2 class="number">2</h2><h2 class="stepTitle step-title-two">Permits & Regulations</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-three"><h2 class="number">3</h2><h2 class="stepTitle step-title-three">Networking</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-four"><h2 class="number">4</h2><h2 class="stepTitle step-title-four">Data Requests</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-five"><h2 class="number">5</h2><h2 class="stepTitle step-title-five">Workforce assitance</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-six"><h2 class="number">6</h2><h2 class="stepTitle step-title-six">Financing assistance</h2></div>
+              <div class="col m1 step-col s6 hvr-bounce-to-top step-seven"><h2 class="number">7</h2><h2 class="stepTitle step-title-seven">Promote your success</h2></div>
             </div>
             <div class="big-container">
               <div class="row step-desc">
                 <div class="col m4 s12">
-                  <h5 class="subhead">Sub Header About step</h5>
-                  <p>The ACEA provides prompt response and identification of available commercial, office, industrial and developable land requests tailored to your specifications and requirements.  The ACEA acts as your liaison with brokers for follow up information requests while maintaining strict confidentiality until your firm is ready to engage in actual site visits.  Our staff is available to accompany you on site visits and provide insight and assistance throughout the process.</p>
+                  <h5 class="subhead">Site Selection</h5>
+                  <p class="about-service">The ACEA provides prompt response and identification of available commercial, office, industrial and developable land requests tailored to your specifications and requirements.  The ACEA acts as your liaison with brokers for follow up information requests while maintaining strict confidentiality until your firm is ready to engage in actual site visits.  Our staff is available to accompany you on site visits and provide insight and assistance throughout the process.</p>
                   <div id="download-pdf" class="button-solid">PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
                 </div>
                 <div class="graphic">
@@ -291,14 +281,20 @@
         <i class="fa fa-chevron-up"></i>
         <div class="container">
           <div class="row data-row">
-            <div class="col m2"><h1>1</h1></div>
-            <div class="col m2"><h1>2</h1></div>
-            <div class="col m2"><h1>3</h1></div>
-            <div class="col m2"><h1>4</h1></div>
-            <div class="col m2"><h1>5</h1></div>
-            <div class="col m2"><h1>6</h1></div>
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s12 m3"><a href="#test1"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a class="active" href="#test2"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a href="#test3"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a href="#test4"><h1>#1</h1></a></li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12 center-align">Test 1</div>
+            <div id="test2" class="col s12 center-align">Test 2</div>
+            <div id="test3" class="col s12 center-align">Test 3</div>
+            <div id="test4" class="col s12 center-align">Test 4</div>
+            <h3 class="header center"><a href="#">Dept. of Labor & Workforce Data</a></h3>
           </div>
-          <h3 class="header center"><a href="#">Dept. of Labor & Workforce Data</a></h3>
         </div>
       </div>
 

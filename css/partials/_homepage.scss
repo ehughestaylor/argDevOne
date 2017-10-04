@@ -75,8 +75,9 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     color: $navy;
   }
   //card size
+
   .card.small{
-    height:220px;
+    height:auto;
     .card-title{
       font-size:14px;
     }
@@ -111,6 +112,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     bottom:0;
     z-index: 4;
     width:100%;
+    padding-bottom: 4em;
   }
   .card .card-image img {
       display: block;
@@ -121,11 +123,11 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       top: 0;
       bottom: 0;
       width: 100%;
-      height: 270px;
+      // height: 270px;
   }
   //card reveal
   .card .card-reveal {
-      padding: 24px;
+      padding: 10px;
       position: absolute;
       background-color: $navy;
       color:white;
@@ -401,8 +403,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       border-bottom:1px solid white;
       padding-bottom: 1em;
       margin-bottom: 0;
-
-
+      min-height: 65px;
     }
   }
   .step-col-active{
@@ -476,6 +477,12 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   background-color: white;
   min-height: 400px;
   .data-row{
+    .tabs{
+      height: auto;
+      .tab{
+        height: auto;
+      }
+    }
     h1{
       background-color: #00274D;
       text-align: center;
@@ -495,9 +502,10 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     color: white;
   }
   h3.header{
-    padding-top: 1em;
-    font-size: 32px;
+    padding-top: 2em;
+    font-size: 2em;
     font-weight: 100;
+    line-height: 1.4em;
     a{
       color:$navy;
       border-bottom: 1px solid $navy;
@@ -614,6 +622,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     text-align: center;
     font-size: $mobile-header-font-size;
   }
+  // top section
   #index-banner{
     .jumbotron-h1{
       font-size: $mobile-header-font-size;
@@ -624,5 +633,22 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     .jumbo-sub-two{
       font-size: $mobile-sub-two-header-font-size;
     }
+  }
+  //target industries
+  #target-industries-banner{
+    min-height: 200px;
+    #target-industries-button{
+      margin: 0 auto;
+      display: block;
+      background-color: transparent;
+      border:1px solid white;
+      color:white;
+      width: auto;
+      padding: 0 1em;
+    }
+  }
+  // business services
+  #business-services .step-col {
+    width: 50%;
   }
 }
