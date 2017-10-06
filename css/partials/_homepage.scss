@@ -22,6 +22,9 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   max-width: 1200px;
   width: 82%;
 }
+.turq{
+  color:$turq
+}
 
 //////////////////////////
 /////////////////HOME BANNER TOP
@@ -85,7 +88,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   .card .card-content .card-title {
     display: block;
     text-align: left;
-    line-height: 23px;
+    line-height: 39px;
     margin-bottom: 0px;
   }
   .card-category{
@@ -194,6 +197,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
   ///WHY ATLANTIC COUNTY?
   #bottomSectionAbout{
+    position: relative;
     h1{
       color:$navy;
     }
@@ -322,7 +326,32 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     margin-top: 0;
   }
   .industry-image{
-    background-image: url(../img/aviation.jpg);
+    background-image: url(../img/ind-1.jpg);
+    background-size: cover;
+    min-height: 500px;
+  }
+  .industry-two-image{
+    background-image: url(../img/ind-2.jpg);
+    background-size: cover;
+    min-height: 500px;
+  }
+  .industry-three-image{
+    background-image: url(../img/ind-3.jpg);
+    background-size: cover;
+    min-height: 500px;
+  }
+  .industry-four-image{
+    background-image: url(../img/ind-4.jpg);
+    background-size: cover;
+    min-height: 500px;
+  }
+  .industry-five-image{
+    background-image: url(../img/ind-5.jpg);
+    background-size: cover;
+    min-height: 500px;
+  }
+  .industry-six-image{
+    background-image: url(../img/ind-6.jpg);
     background-size: cover;
     min-height: 500px;
   }
@@ -343,7 +372,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     span{
       font-family: $base-font-family;
       letter-spacing: 1.31px;
-      font-size: 18px;
+      font-size: 15px;
     }
     .icon-row{
       margin-top: 2rem;
@@ -476,6 +505,13 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   position: relative;
   background-color: white;
   min-height: 400px;
+  .tabs .indicator {
+      position: absolute;
+      bottom: 8px;
+      height: 2px;
+      background-color: $yellow;
+      will-change: left, right;
+  }
   .data-row{
     .tabs{
       height: auto;
@@ -502,7 +538,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     color: white;
   }
   h3.header{
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 2em;
     font-weight: 100;
     line-height: 1.4em;
@@ -512,9 +548,6 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     }
   }
 }
-
-
-
 
 #real-estate{
   position: relative;
@@ -541,6 +574,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     cursor: pointer;
     .top-right{
       position: absolute;
+      opacity: 0.6;
     }
   }
 }
@@ -558,26 +592,32 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   }
   position: relative;
   .contact-row{
-    // background-color:$blue;
-    min-height: 215px;
+    background-color:$blue;
+    // min-height: 215px;
     margin-bottom: 0;
   }
   .left-col{
     padding: 0;
+    min-height: 241px;
+  }
+  .right-col{
+    min-height: 241px;
   }
   .row-left{
     background-color:$blue;
     margin-bottom: 0;
   }
   h1.header{
-    line-height: 215px;
+    // line-height: 215px;
     color: white;
   }
   .social-icon{
     font-size: 24px;
-    padding: 0
+    padding: 0 6px;
   }
 }
+
+//FOOTER
 
 .page-footer{
   padding-top: 0;
@@ -614,6 +654,10 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 
 
+
+
+
+
 @media #{$small-and-down} {
   .big-container {
     width: 100%;
@@ -634,6 +678,13 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       font-size: $mobile-sub-two-header-font-size;
     }
   }
+  #topSectionAbout{
+    text-align: center;
+    .text-para{
+      text-align: center;
+    }
+
+  }
   //target industries
   #target-industries-banner{
     min-height: 200px;
@@ -649,6 +700,12 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
   }
   // business services
   #business-services .step-col {
-    width: 50%;
+    width: 33%;
+  }
+  #business-services .step-col h2 {
+    text-align: left;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-size: 1em;
   }
 }
