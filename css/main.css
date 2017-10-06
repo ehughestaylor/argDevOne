@@ -44,7 +44,7 @@
   text-align: center; }
 
 .button-solid {
-  width: 153px;
+  width: 165px;
   height: 55px;
   background-color: #FFB700;
   line-height: 51px;
@@ -84,6 +84,12 @@ nav ul a {
   color: #00274D;
   font-size: 14px; }
 
+nav ul li.active {
+  background-color: transparent; }
+  nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #00AFAC; }
+
 .bluenav {
   background-color: #00AFAC; }
   .bluenav ul a {
@@ -111,6 +117,17 @@ nav.nav-center ul li a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 996;
   will-change: opacity; }
+
+.side-nav li > a {
+  color: white;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+  text-align: left;
+  font-family: "Heebo", sans-serif; }
 
 .side-nav {
   position: fixed;
@@ -147,6 +164,9 @@ nav.nav-center ul li a {
   margin: 0 auto;
   max-width: 1200px;
   width: 82%; }
+
+.turq {
+  color: #00AFAC; }
 
 .jumbotron-h1 {
   font-size: 64px;
@@ -190,7 +210,7 @@ nav.nav-center ul li a {
   #news-banner .card .card-content .card-title {
     display: block;
     text-align: left;
-    line-height: 23px;
+    line-height: 39px;
     margin-bottom: 0px; }
   #news-banner .card-category {
     font-size: 10px;
@@ -276,45 +296,47 @@ nav.nav-center ul li a {
     top: 0;
     right: 0;
     z-index: 0; }
-  #about-banner #bottomSectionAbout h1 {
-    color: #00274D; }
-  @media only screen and (min-width: 601px) {
-    #about-banner #bottomSectionAbout .big-container {
-      width: 85%; } }
-  @media only screen and (min-width: 993px) {
-    #about-banner #bottomSectionAbout .big-container {
-      width: 82%; } }
-  #about-banner #bottomSectionAbout .ac-map {
-    max-height: 464px; }
-  #about-banner #bottomSectionAbout p.para {
-    padding: 1em;
-    background-color: #028F8C;
-    font-family: "PT Serif", serif;
-    font-size: 15px;
-    color: white;
-    font-weight: 400; }
-  #about-banner #bottomSectionAbout .ico-group {
-    display: inline-block;
-    font-family: "Heebo", sans-serif;
-    font-weight: 300;
-    color: white;
-    font-size: 12px; }
-    #about-banner #bottomSectionAbout .ico-group p {
-      margin-top: 2px; }
-  #about-banner #bottomSectionAbout #why-ac-icons {
-    position: relative;
-    width: 100%;
-    list-style-type: none;
-    display: block; }
-    #about-banner #bottomSectionAbout #why-ac-icons li {
+  #about-banner #bottomSectionAbout {
+    position: relative; }
+    #about-banner #bottomSectionAbout h1 {
+      color: #00274D; }
+    @media only screen and (min-width: 601px) {
+      #about-banner #bottomSectionAbout .big-container {
+        width: 85%; } }
+    @media only screen and (min-width: 993px) {
+      #about-banner #bottomSectionAbout .big-container {
+        width: 82%; } }
+    #about-banner #bottomSectionAbout .ac-map {
+      max-height: 464px; }
+    #about-banner #bottomSectionAbout p.para {
+      padding: 1em;
+      background-color: #028F8C;
+      font-family: "PT Serif", serif;
+      font-size: 15px;
+      color: white;
+      font-weight: 400; }
+    #about-banner #bottomSectionAbout .ico-group {
       display: inline-block;
-      cursor: pointer;
-      line-height: 60px;
-      width: 60px;
-      border: 1px solid white;
-      margin: 5px;
-      font-size: 23px;
-      border-radius: 100%; }
+      font-family: "Heebo", sans-serif;
+      font-weight: 300;
+      color: white;
+      font-size: 12px; }
+      #about-banner #bottomSectionAbout .ico-group p {
+        margin-top: 2px; }
+    #about-banner #bottomSectionAbout #why-ac-icons {
+      position: relative;
+      width: 100%;
+      list-style-type: none;
+      display: block; }
+      #about-banner #bottomSectionAbout #why-ac-icons li {
+        display: inline-block;
+        cursor: pointer;
+        line-height: 60px;
+        width: 60px;
+        border: 1px solid white;
+        margin: 5px;
+        font-size: 23px;
+        border-radius: 100%; }
 
 #target-industries-banner .carousel .indicators .indicator-item {
   display: block;
@@ -379,7 +401,27 @@ nav.nav-center ul li a {
     border-bottom: 3px solid white;
     margin-top: 0; }
   #target-industries-banner .industry-image {
-    background-image: url(../img/aviation.jpg);
+    background-image: url(../img/ind-1.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-two-image {
+    background-image: url(../img/ind-2.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-three-image {
+    background-image: url(../img/ind-3.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-four-image {
+    background-image: url(../img/ind-4.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-five-image {
+    background-image: url(../img/ind-5.jpg);
+    background-size: cover;
+    min-height: 500px; }
+  #target-industries-banner .industry-six-image {
+    background-image: url(../img/ind-6.jpg);
     background-size: cover;
     min-height: 500px; }
   #target-industries-banner .industry-card {
@@ -395,7 +437,7 @@ nav.nav-center ul li a {
     #target-industries-banner .industry-card span {
       font-family: "PT Serif", serif;
       letter-spacing: 1.31px;
-      font-size: 18px; }
+      font-size: 15px; }
     #target-industries-banner .industry-card .icon-row {
       margin-top: 2rem; }
       #target-industries-banner .industry-card .icon-row ul {
@@ -485,6 +527,12 @@ nav.nav-center ul li a {
   position: relative;
   background-color: white;
   min-height: 400px; }
+  #data-section .tabs .indicator {
+    position: absolute;
+    bottom: 8px;
+    height: 2px;
+    background-color: #FFB700;
+    will-change: left, right; }
   #data-section .data-row .tabs {
     height: auto; }
     #data-section .data-row .tabs .tab {
@@ -505,7 +553,7 @@ nav.nav-center ul li a {
     font-size: 90px;
     color: white; }
   #data-section h3.header {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 2em;
     font-weight: 100;
     line-height: 1.4em; }
@@ -533,7 +581,8 @@ nav.nav-center ul li a {
   #real-estate .listing {
     cursor: pointer; }
     #real-estate .listing .top-right {
-      position: absolute; }
+      position: absolute;
+      opacity: 0.6; }
 
 #contact-section {
   position: relative; }
@@ -560,7 +609,7 @@ nav.nav-center ul li a {
     color: white; }
   #contact-section .social-icon {
     font-size: 24px;
-    padding: 0; }
+    padding: 0 6px; }
 
 .page-footer {
   padding-top: 0;
@@ -600,6 +649,11 @@ nav.nav-center ul li a {
   #index-banner .jumbo-sub-two {
     font-size: 18px; }
 
+  #topSectionAbout {
+    text-align: center; }
+    #topSectionAbout .text-para {
+      text-align: center; }
+
   #target-industries-banner {
     min-height: 200px; }
     #target-industries-banner #target-industries-button {
@@ -612,6 +666,144 @@ nav.nav-center ul li a {
       padding: 0 1em; }
 
   #business-services .step-col {
-    width: 50%; } }
+    width: 33%; }
+
+  #business-services .step-col h2 {
+    text-align: left;
+    color: white;
+    font-family: "PT Serif", serif;
+    font-size: 1em; } }
+.internal-page nav {
+  background: white; }
+  .internal-page nav .brand-logo img {
+    height: 65px; }
+.internal-page .parallax-container {
+  height: 500px; }
+.internal-page #section-one-content .header,
+.internal-page #section-two-content .header {
+  color: #00274D;
+  font-size: 3em;
+  padding: 18px 0 2px 0;
+  font-weight: 500;
+  line-height: 54px; }
+.internal-page #section-one-content .subheader,
+.internal-page #section-two-content .subheader {
+  font-family: "PT Serif", serif; }
+.internal-page #section-one-content p,
+.internal-page #section-two-content p {
+  font-family: "PT Serif", serif;
+  font-size: 17px; }
+.internal-page .mission-section {
+  padding: 0; }
+.internal-page #section-two-content {
+  background-color: #FFB700; }
+  .internal-page #section-two-content .subheader {
+    color: white; }
+  .internal-page #section-two-content .mission {
+    font-weight: 400;
+    color: #00274D; }
+  .internal-page #section-two-content .core-focus {
+    color: #00274D;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 7px; }
+  .internal-page #section-two-content .focus-icons img {
+    max-height: 100px;
+    margin: 0 auto; }
+  .internal-page #section-two-content .focus-icons p {
+    font-size: 13px;
+    color: #00274D; }
+.internal-page #section-three-content {
+  background-color: #00AFAC; }
+  .internal-page #section-three-content h1 {
+    margin-top: 0;
+    font-weight: 100;
+    padding-top: 0.5em; }
+  .internal-page #section-three-content .green-para {
+    background-color: #028F8C; }
+  .internal-page #section-three-content p {
+    color: #00274D;
+    font-family: "PT Serif", serif;
+    font-size: 17px; }
+.internal-page #section-four-content .subheader {
+  color: #00274D;
+  font-family: "PT Serif", serif; }
+.internal-page #section-four-content .para {
+  font-weight: 400;
+  color: #00274D;
+  font-family: "PT Serif", serif;
+  font-size: 17px; }
+.internal-page #section-five-content h4 {
+  margin-top: 0;
+  font-weight: 100;
+  padding-top: 0.5em; }
+.internal-page #section-five-content .collection-item {
+  font-family: "PT Serif", serif;
+  font-style: italic; }
+.internal-page #section-five-content .board-of-trustees {
+  max-height: 455px;
+  overflow: scroll; }
+.internal-page #section-five-content .collection.with-header .collection-header {
+  background-color: #B9B9B9;
+  border-bottom: 1px solid #B9B9B9;
+  padding: 10px 20px;
+  color: white; }
+.internal-page #why-ac-one {
+  background-color: #00AFAC; }
+  .internal-page #why-ac-one .para {
+    color: white;
+    font-size: 17px;
+    font-family: "PT Serif", serif;
+    text-indent: 25px; }
+.internal-page #higher-education ul.collapsible {
+  box-shadow: none;
+  border: none; }
+.internal-page #higher-education .subhead {
+  font-style: italic;
+  font-size: 20px;
+  font-family: "PT Serif", serif; }
+.internal-page #higher-education .first {
+  border-top: 1px solid #00274D;
+  padding-top: 1em; }
+.internal-page #higher-education .subheader {
+  font-weight: 100;
+  color: #00274D; }
+.internal-page #higher-education p {
+  font-family: "Heebo", sans-serif; }
+.internal-page #higher-education .para {
+  color: #00274D;
+  font-size: 17px;
+  font-family: "PT Serif", serif; }
+.internal-page #quality-of-life {
+  background-color: #00AFAC; }
+  .internal-page #quality-of-life ul.collapsible {
+    box-shadow: none;
+    border: none; }
+  .internal-page #quality-of-life .collapsible-header {
+    background-color: #028F8C; }
+  .internal-page #quality-of-life .collapsible-body {
+    background-color: #028F8C; }
+  .internal-page #quality-of-life .subhead {
+    font-style: italic;
+    font-size: 20px;
+    font-family: "PT Serif", serif;
+    color: white; }
+    .internal-page #quality-of-life .subhead i {
+      color: #00274D; }
+  .internal-page #quality-of-life .first {
+    border-top: 1px solid #00274D;
+    padding-top: 1em; }
+  .internal-page #quality-of-life .subheader {
+    font-weight: 100;
+    color: #00274D; }
+  .internal-page #quality-of-life p {
+    font-family: "Heebo", sans-serif; }
+  .internal-page #quality-of-life .para {
+    color: #00274D;
+    text-align: right;
+    font-size: 17px;
+    font-family: "PT Serif", serif; }
+.internal-page #higher-education .collapsible-header.subhead.active {
+  border-bottom: 2px solid #00274D; }
 
 /*# sourceMappingURL=main.css.map */
