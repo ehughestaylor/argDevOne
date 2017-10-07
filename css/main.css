@@ -780,9 +780,13 @@ nav.nav-center ul li a {
     box-shadow: none;
     border: none; }
   .internal-page #quality-of-life .collapsible-header {
-    background-color: #028F8C; }
+    background-color: #028F8C;
+    border: 1px solid #00AFAC; }
   .internal-page #quality-of-life .collapsible-body {
-    background-color: #028F8C; }
+    background-color: #028F8C;
+    border-bottom: 1px solid #028F8C; }
+    .internal-page #quality-of-life .collapsible-body p {
+      color: white; }
   .internal-page #quality-of-life .subhead {
     font-style: italic;
     font-size: 20px;
@@ -805,5 +809,222 @@ nav.nav-center ul li a {
     font-family: "PT Serif", serif; }
 .internal-page #higher-education .collapsible-header.subhead.active {
   border-bottom: 2px solid #00274D; }
+.internal-page #business-case-studies {
+  background-color: #FFB700;
+  padding-bottom: 1em; }
+  .internal-page #business-case-studies h1 {
+    font-family: "PT Serif", serif;
+    color: white;
+    margin: 0;
+    padding: 0.5em; }
+  .internal-page #business-case-studies .small {
+    height: auto; }
+  .internal-page #business-case-studies .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+    background: rgba(0, 39, 77, 0.5); }
+.internal-page #menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: inline-block;
+  color: #fff;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0;
+  background-color: #26a69a;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  vertical-align: middle;
+  cursor: pointer !important;
+  z-index: 999999; }
+.internal-page a.waves-effect.waves-light.btn.btn-floating.btn-large.cyan.tap-target-origin {
+  border-radius: 50%; }
+.internal-page .tap-target-content {
+  text-align: right; }
+  .internal-page .tap-target-content li a {
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100; }
+.internal-page .target-industries h3.subhead {
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  border-top: 1px solid #00274D;
+  padding-top: 0.5em; }
+.internal-page .target-industries .collapsible-header {
+  font-family: "PT Serif", serif;
+  font-size: 14px; }
+.internal-page .target-industries .subhead {
+  font-weight: 100;
+  margin-bottom: 0;
+  cursor: default; }
+.internal-page .target-industries .subheader {
+  font-weight: 100;
+  font-style: normal; }
+.internal-page .target-industries ul.collapsible {
+  box-shadow: none;
+  border: none; }
+.internal-page #target-industries-one {
+  background-color: #FFB700; }
+  .internal-page #target-industries-one .para {
+    color: #00274D;
+    font-size: 17px;
+    font-family: "PT Serif", serif; }
+.internal-page #target-industries-two ul.collapsible {
+  box-shadow: none;
+  border: none; }
+.internal-page #target-industries-two .first {
+  border-top: 1px solid #00274D;
+  padding-top: 1em; }
+.internal-page #target-industries-two .subheader {
+  font-weight: 100;
+  font-style: normal;
+  color: #00274D; }
+.internal-page #target-industries-two p {
+  font-family: "Heebo", sans-serif;
+  font-size: 14px; }
+.internal-page #target-industries-two .para {
+  color: #00274D;
+  font-size: 17px;
+  font-family: "PT Serif", serif;
+  font-style: normal; }
+.internal-page #target-industries-three {
+  background-color: #00274D; }
+  .internal-page #target-industries-three .subheader {
+    color: white;
+    font-weight: 100;
+    font-style: normal; }
+  .internal-page #target-industries-three ul.collapsible {
+    box-shadow: none;
+    border: none; }
+  .internal-page #target-industries-three .collapsible-header {
+    background-color: #00274D;
+    border: 1px solid #00274D; }
+  .internal-page #target-industries-three .collapsible-body {
+    background-color: #00274D;
+    border-bottom: 1px solid #00274D; }
+    .internal-page #target-industries-three .collapsible-body p {
+      color: white; }
+  .internal-page #target-industries-three .subhead {
+    margin-top: 0;
+    color: white; }
+    .internal-page #target-industries-three .subhead i {
+      color: #00274D; }
+  .internal-page #target-industries-three .first {
+    border-top: 1px solid #00274D;
+    padding-top: 1em; }
+  .internal-page #target-industries-three p {
+    font-family: "Heebo", sans-serif; }
+  .internal-page #target-industries-three .para {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    text-indent: 20px;
+    font-weight: 400;
+    font-family: "PT Serif", serif; }
+.internal-page #target-industries-four {
+  background-color: #FFB700;
+  padding-bottom: 1em; }
+  .internal-page #target-industries-four .subheader {
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100; }
+  .internal-page #target-industries-four .subhead {
+    border-top: none;
+    border-bottom: 1px solid #00274D;
+    margin-top: 0;
+    padding-bottom: 0.5em; }
+  .internal-page #target-industries-four .para {
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    text-indent: 20px;
+    font-weight: 400;
+    font-family: "PT Serif", serif; }
+  .internal-page #target-industries-four .collapsible-header {
+    background-color: #FFB700;
+    border: 1px solid #FFB700; }
+  .internal-page #target-industries-four .collapsible-body {
+    background-color: #FFB700;
+    border-bottom: 1px solid #FFB700; }
+    .internal-page #target-industries-four .collapsible-body p {
+      color: white; }
+  .internal-page #target-industries-four h1 {
+    font-family: "PT Serif", serif;
+    color: white;
+    margin: 0;
+    padding: 0.5em; }
+  .internal-page #target-industries-four .small {
+    height: auto; }
+  .internal-page #target-industries-four .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+    background: rgba(0, 39, 77, 0.5); }
+.internal-page #target-industries-five ul.collapsible {
+  box-shadow: none;
+  border: none; }
+.internal-page #target-industries-five .first {
+  border-top: 1px solid #00274D;
+  padding-top: 1em; }
+.internal-page #target-industries-five .subheader {
+  font-weight: 100;
+  font-style: normal;
+  color: #00274D; }
+.internal-page #target-industries-five p {
+  font-family: "Heebo", sans-serif;
+  font-size: 14px; }
+.internal-page #target-industries-five .para {
+  color: #00274D;
+  font-size: 17px;
+  font-family: "PT Serif", serif;
+  font-style: normal; }
+.internal-page #target-industries-six {
+  background-color: #00274D; }
+  .internal-page #target-industries-six .subheader {
+    color: white;
+    font-weight: 100;
+    font-style: normal; }
+  .internal-page #target-industries-six ul.collapsible {
+    box-shadow: none;
+    border: none; }
+  .internal-page #target-industries-six .collapsible-header {
+    background-color: #00274D;
+    border: 1px solid #00274D; }
+  .internal-page #target-industries-six .collapsible-body {
+    background-color: #00274D;
+    border-bottom: 1px solid #00274D; }
+    .internal-page #target-industries-six .collapsible-body p {
+      color: white; }
+  .internal-page #target-industries-six .subhead {
+    margin-top: 0;
+    color: white; }
+    .internal-page #target-industries-six .subhead i {
+      color: #00274D; }
+  .internal-page #target-industries-six .first {
+    border-top: 1px solid #00274D;
+    padding-top: 1em; }
+  .internal-page #target-industries-six p {
+    font-family: "Heebo", sans-serif; }
+  .internal-page #target-industries-six .para {
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    text-indent: 20px;
+    font-weight: 400;
+    font-family: "PT Serif", serif; }
 
 /*# sourceMappingURL=main.css.map */

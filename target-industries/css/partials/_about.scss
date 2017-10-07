@@ -1,0 +1,249 @@
+@import "base";
+
+
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+
+///////////////////////////////
+.internal-page{
+  nav{
+    background:white;
+    .brand-logo img{
+      height: 65px;
+    }
+  }
+  .parallax-container{
+    height:500px;
+  }
+
+  //////////////
+  /// ABOUT ACEA
+  //////////////
+  #section-one-content,
+  #section-two-content{
+    .header{
+      color: $navy;
+      font-size: $header-font-size;
+      padding: 18px 0 2px 0;
+      font-weight: 500;
+      line-height: 54px;
+    }
+    .subheader{
+      font-family: $base-font-family;
+    }
+    p{
+      font-family: $base-font-family;
+      font-size: 17px;
+    }
+  }
+  .mission-section{
+    padding:0;
+  }
+  #section-two-content{
+    background-color: $yellow;
+    .subheader{
+      color: white;
+    }
+    .mission{
+      // text-indent: 25px;
+      font-weight:400;
+      color: $navy;
+    }
+    .core-focus{
+      color:$navy;
+      font-weight: 100;
+      text-align:center;
+      padding-bottom: 7px;
+      // border-bottom: 1px solid white;
+      // display: none;
+    }
+    .focus-icons{
+      img{
+        max-height: 100px;
+        margin: 0 auto;
+      }
+      p{
+        font-size: 13px;
+        color: $navy;
+      }
+    }
+  }
+  #section-three-content{
+    background-color: $turq;
+    h1{
+      margin-top: 0;
+      font-weight: 100;
+      padding-top: 0.5em;
+    }
+    .green-para{
+      background-color: #028F8C;
+    }
+    p{
+      // font-size: 13px;
+      color: $navy;
+      font-family: $base-font-family;
+      font-size: 17px;
+    }
+  }
+  #section-four-content{
+    .subheader{
+      color: $navy;
+      font-family: $base-font-family;
+    }
+    .para{
+      font-weight:400;
+      color: $navy;
+      font-family: $base-font-family;
+      font-size: 17px;
+    }
+  }
+
+  #section-five-content{
+    h4{
+      margin-top: 0;
+      font-weight: 100;
+      padding-top: 0.5em;
+    }
+    .collection-item{
+      font-family: $base-font-family;
+      font-style: italic;
+    }
+    .board-of-trustees{
+      max-height: 455px;
+      overflow: scroll;
+    }
+    .collection.with-header .collection-header {
+        background-color: $grey;
+        border-bottom: 1px solid $grey;
+        padding: 10px 20px;
+        color: white;
+    }
+  }
+
+  ////////////////
+  /////WHY AC
+  ///////////////
+  #why-ac-one{
+    background-color: $turq;
+    .para{
+      color: white;
+      font-size: 17px;
+      font-family: $base-font-family;
+      text-indent: 25px;
+    }
+  }
+  #higher-education{
+    ul.collapsible {
+        box-shadow: none;
+        border: none;
+    }
+    .subhead{
+      font-style: italic;
+      font-size: 20px;
+      font-family: $base-font-family;
+    }
+    .first{
+      border-top: 1px solid $navy;
+      padding-top: 1em;
+    }
+    .subheader{
+      font-weight: 100;
+      color:$navy;
+    }
+    p{
+      font-family: $header-font-family;
+    }
+    .para{
+      color: $navy;
+      font-size: 17px;
+      font-family: $base-font-family;
+    }
+  }
+  #quality-of-life{
+    background-color: $turq;
+    ul.collapsible {
+        box-shadow: none;
+        border: none;
+    }
+    .collapsible-header{
+      background-color: #028F8C;
+      border: 1px solid $turq;
+      // border-bottom: $navy;
+    }
+    .collapsible-body{
+      background-color: #028F8C;
+      border-bottom: 1px solid #028F8C;
+      p{
+        color: white;
+      }
+    }
+    .subhead{
+      font-style: italic;
+      font-size: 20px;
+      font-family: $base-font-family;
+      color: white;
+      i{
+        color: $navy
+      }
+    }
+    .first{
+      border-top: 1px solid $navy;
+      padding-top: 1em;
+    }
+    .subheader{
+      font-weight: 100;
+      color:$navy;
+    }
+    p{
+      font-family: $header-font-family;
+    }
+    .para{
+      color: $navy;
+      text-align: right;
+      font-size: 17px;
+      font-family: $base-font-family;
+    }
+  }
+  #higher-education{
+    .collapsible-header.subhead.active {
+      border-bottom: 2px solid $navy;
+    }
+  }
+  #business-case-studies{
+    background-color: $yellow;
+    padding-bottom: 1em;
+    h1{
+      font-family: $base-font-family;
+      color: white;
+      margin:0;
+      padding: 0.5em;
+    }
+    .small{
+      height: auto;
+    }
+    .card-title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      width: 100%;
+      padding: 24px;
+      background: rgba(0,39,77,0.5);
+    }
+
+    }
+}

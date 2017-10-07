@@ -180,10 +180,15 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
     }
     .collapsible-header{
       background-color: #028F8C;
+      border: 1px solid $turq;
       // border-bottom: $navy;
     }
     .collapsible-body{
       background-color: #028F8C;
+      border-bottom: 1px solid #028F8C;
+      p{
+        color: white;
+      }
     }
     .subhead{
       font-style: italic;
@@ -217,5 +222,296 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
       border-bottom: 2px solid $navy;
     }
   }
+  #business-case-studies{
+    background-color: $yellow;
+    padding-bottom: 1em;
+    h1{
+      font-family: $base-font-family;
+      color: white;
+      margin:0;
+      padding: 0.5em;
+    }
+    .small{
+      height: auto;
+    }
+    .card-title {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      width: 100%;
+      padding: 24px;
+      background: rgba(0,39,77,0.5);
+    }
+  }
 
+
+////////////////
+/////TARGET INDUSTRIES PAGE
+///////////////
+#menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+    background-color: #26a69a;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    transition: .3s;
+    vertical-align: middle;
+    cursor: pointer!important;
+    z-index: 999999
+}
+a.waves-effect.waves-light.btn.btn-floating.btn-large.cyan.tap-target-origin {
+    border-radius: 50%;
+}
+.tap-target-content {
+  text-align: right;
+  li{
+    a{
+      color: white;
+      font-family: $header-font-family;
+      font-weight: 100;
+    }
+  }
+}
+.target-industries{
+    h3.subhead{
+      font-family: $header-font-family;
+      font-size: 24px;
+      border-top: 1px solid $navy;
+      padding-top: 0.5em;
+    }
+    .collapsible-header{
+      font-family: $base-font-family;
+      font-size: 14px;
+    }
+    .subhead{
+      font-weight: 100;
+      margin-bottom: 0;
+      cursor: default;
+    }
+    .subheader{
+      font-weight: 100;
+      font-style: normal;
+    }
+    ul.collapsible {
+        box-shadow: none;
+        border: none;
+    }
+}
+#target-industries-one{
+  background-color: $yellow;
+  .para{
+    color: $navy;
+    font-size: 17px;
+    font-family: $base-font-family;
+    // text-indent: 25px;
+  }
+}
+#target-industries-two{
+  ul.collapsible {
+      box-shadow: none;
+      border: none;
+  }
+  .first{
+    border-top: 1px solid $navy;
+    padding-top: 1em;
+  }
+  .subheader{
+    font-weight: 100;
+    font-style: normal;
+    color:$navy;
+  }
+  p{
+    font-family: $header-font-family;
+    font-size: $base-font-size;
+  }
+  .para{
+    color: $navy;
+    font-size: 17px;
+    font-family: $base-font-family;
+    font-style: normal;
+  }
+}
+#target-industries-three{
+  background-color: $navy;
+  .subheader{
+    color: white;
+    font-weight: 100;
+    font-style: normal;
+  }
+  ul.collapsible {
+      box-shadow: none;
+      border: none;
+  }
+  .collapsible-header{
+    background-color: $navy;
+    border: 1px solid $navy;
+    // border-bottom: $navy;
+  }
+  .collapsible-body{
+    background-color: $navy;
+    border-bottom: 1px solid $navy;
+    p{
+      color: white;
+    }
+  }
+  .subhead{
+    margin-top: 0;
+    color: white;
+    i{
+      color: $navy
+    }
+  }
+  .first{
+    border-top: 1px solid $navy;
+    padding-top: 1em;
+  }
+  p{
+    font-family: $header-font-family;
+  }
+  .para{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    text-indent:20px;
+    font-weight: 400;
+    font-family: $base-font-family;
+  }
+}
+
+#target-industries-four{
+  background-color: $yellow;
+  padding-bottom: 1em;
+  .subheader{
+    color: white;
+    font-family: $header-font-family;
+    font-weight: 100;
+  }
+  .subhead{
+    border-top: none;
+    border-bottom:1px solid $navy;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+  }
+  .para{
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    font-style: normal;
+    text-indent:20px;
+    font-weight: 400;
+    font-family: $base-font-family;
+  }
+  .collapsible-header{
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    // border-bottom: $navy;
+  }
+  .collapsible-body{
+    background-color: $yellow;
+    border-bottom: 1px solid $yellow;
+    p{
+      color: white;
+    }
+  }
+  h1{
+    font-family: $base-font-family;
+    color: white;
+    margin:0;
+    padding: 0.5em;
+  }
+  .small{
+    height: auto;
+  }
+  .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+    background: rgba(0,39,77,0.5);
+  }
+  }
+  #target-industries-five{
+    ul.collapsible {
+        box-shadow: none;
+        border: none;
+    }
+    .first{
+      border-top: 1px solid $navy;
+      padding-top: 1em;
+    }
+    .subheader{
+      font-weight: 100;
+      font-style: normal;
+      color:$navy;
+    }
+    p{
+      font-family: $header-font-family;
+      font-size: $base-font-size;
+    }
+    .para{
+      color: $navy;
+      font-size: 17px;
+      font-family: $base-font-family;
+      font-style: normal;
+    }
+  }
+  #target-industries-six{
+    background-color: $navy;
+    .subheader{
+      color: white;
+      font-weight: 100;
+      font-style: normal;
+    }
+    ul.collapsible {
+        box-shadow: none;
+        border: none;
+    }
+    .collapsible-header{
+      background-color: $navy;
+      border: 1px solid $navy;
+      // border-bottom: $navy;
+    }
+    .collapsible-body{
+      background-color: $navy;
+      border-bottom: 1px solid $navy;
+      p{
+        color: white;
+      }
+    }
+    .subhead{
+      margin-top: 0;
+      color: white;
+      i{
+        color: $navy
+      }
+    }
+    .first{
+      border-top: 1px solid $navy;
+      padding-top: 1em;
+    }
+    p{
+      font-family: $header-font-family;
+    }
+    .para{
+      color: white;
+      text-align: left;
+      font-size: 15px;
+      font-style: normal;
+      text-indent:20px;
+      font-weight: 400;
+      font-family: $base-font-family;
+    }
+  }
 }

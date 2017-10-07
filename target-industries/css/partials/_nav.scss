@@ -1,0 +1,111 @@
+@import "base";
+
+//logo
+.brand-logo{
+  img{
+    height:91px;
+    // padding: 5px;
+    margin-left: 34px;
+  }
+  .small-logo{
+    height: 70px;
+  }
+}
+
+//nav
+nav{
+  font-family: $header-font-family;
+  font-weight: $regular;
+  box-shadow: none;
+  background-color:transparent;
+}
+nav ul a{
+  color:$navy;
+  font-size:14px;
+}
+nav ul li.active {
+  background-color: transparent;
+
+  a{
+    background-color: rgba(0,0,0,0.1);
+    border-bottom: 1px solid $turq;
+  }
+}
+.bluenav{
+  background-color: $turq;
+  ul a{
+    color:white;
+  }
+}
+
+.navbar-fixed{
+  height:0;
+}
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
+
+/////MOBILE
+#sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 996;
+    will-change: opacity;
+}
+.side-nav li>a {
+    color: white;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+    text-align: left;
+    font-family: $header-font-family;
+}
+.side-nav {
+    position: fixed;
+    width: 300px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: $turq;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+    li{
+      a{
+        width: 100%;
+      }
+    }
+
+}
+.logo-mobile img{
+  height: 55px;
+  margin-left: 0;
+}
+.fa-bars{
+  color: $navy;
+  font-size: 1.5em;
+}

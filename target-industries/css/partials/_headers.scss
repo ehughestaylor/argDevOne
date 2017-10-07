@@ -1,0 +1,18 @@
+@import "base";
+
+.header{
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  font-weight: $light;
+  display: block;
+}
+
+.text-para{
+  p{
+    font-size: 15px;
+    margin-bottom: 1.8em;
+  }
+}
+.para{
+  font-size: 15px;
+}
