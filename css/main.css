@@ -381,6 +381,8 @@ body {
         margin: 5px;
         font-size: 23px;
         border-radius: 100%; }
+    #about-banner #bottomSectionAbout #municipality-data-btn {
+      padding-top: 2em; }
 
 #target-industries-banner .carousel .indicators .indicator-item {
   display: block;
@@ -582,13 +584,20 @@ body {
     #data-section .data-row .tabs .tab {
       height: auto; }
   #data-section .data-row h1 {
-    background-color: #00274D;
     text-align: center;
     color: white;
     height: 130px;
     line-height: 130px;
     border-radius: 100%;
     width: 130px; }
+  #data-section .data-row .blue-tab {
+    background-color: #0298D9; }
+  #data-section .data-row .turq-tab {
+    background-color: #00AFAC; }
+  #data-section .data-row .yellow-tab {
+    background-color: #FFB700; }
+  #data-section .data-row .navy-tab {
+    background-color: #00274D; }
   #data-section i.fa.fa-chevron-up {
     width: 100%;
     position: absolute;
@@ -918,24 +927,26 @@ body {
     font-family: "Heebo", sans-serif;
     font-weight: 100;
     font-size: 20px; }
-.internal-page .target-industries h3.subhead {
-  font-family: "Heebo", sans-serif;
-  font-size: 24px;
-  border-top: 1px solid #00274D;
-  padding-top: 0.5em; }
-.internal-page .target-industries .collapsible-header {
-  font-family: "PT Serif", serif;
-  font-size: 14px; }
-.internal-page .target-industries .subhead {
-  font-weight: 100;
-  margin-bottom: 0;
-  cursor: default; }
-.internal-page .target-industries .subheader {
-  font-weight: 100;
-  font-style: normal; }
-.internal-page .target-industries ul.collapsible {
-  box-shadow: none;
-  border: none; }
+.internal-page .target-industries {
+  padding: 1.23em 0; }
+  .internal-page .target-industries h3.subhead {
+    font-family: "Heebo", sans-serif;
+    font-size: 24px;
+    border-top: 1px solid #00274D;
+    padding-top: 0.5em; }
+  .internal-page .target-industries .collapsible-header {
+    font-family: "PT Serif", serif;
+    font-size: 14px; }
+  .internal-page .target-industries .subhead {
+    font-weight: 100;
+    margin-bottom: 0;
+    cursor: default; }
+  .internal-page .target-industries .subheader {
+    font-weight: 100;
+    font-style: normal; }
+  .internal-page .target-industries ul.collapsible {
+    box-shadow: none;
+    border: none; }
 .internal-page #target-industries-one {
   background-color: #FFB700; }
   .internal-page #target-industries-one .para {
@@ -993,7 +1004,6 @@ body {
     text-align: left;
     font-size: 15px;
     font-style: normal;
-    text-indent: 20px;
     font-weight: 400;
     font-family: "PT Serif", serif; }
 .internal-page #target-industries-four {
@@ -1014,7 +1024,6 @@ body {
     text-align: left;
     font-size: 15px;
     font-style: normal;
-    text-indent: 20px;
     font-weight: 400;
     font-family: "PT Serif", serif; }
   .internal-page #target-industries-four .collapsible-header {
@@ -1092,7 +1101,6 @@ body {
     text-align: left;
     font-size: 15px;
     font-style: normal;
-    text-indent: 20px;
     font-weight: 400;
     font-family: "PT Serif", serif; }
 .internal-page #target-industries-seven .subheader {
