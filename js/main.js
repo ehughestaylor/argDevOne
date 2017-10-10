@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.carousel.carousel-slider').carousel({fullWidth: true});
-  window.setInterval(function(){$('.carousel').carousel('next')},9000)
+  window.setInterval(function(){$('.carousel').carousel('next')},12000)
   $(".button-collapse").sideNav();
   $('.tooltipped').tooltip({delay: 50});
   $('.parallax').parallax();
