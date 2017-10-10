@@ -279,11 +279,10 @@ body {
           border-radius: 100%;
         }
     }
-
+    #municipality-data-btn{
+      padding-top: 2em;
+    }
   }
-
-
-
 }
 
 ///////////////////////////////////
@@ -553,13 +552,24 @@ body {
       }
     }
     h1{
-      background-color: #00274D;
       text-align: center;
       color: white;
       height: 130px;
       line-height: 130px;
       border-radius: 100%;
       width: 130px;
+    }
+    .blue-tab{
+      background-color: $blue;
+    }
+    .turq-tab{
+      background-color: $turq;
+    }
+    .yellow-tab{
+      background-color: $yellow;
+    }
+    .navy-tab{
+      background-color: $navy;
     }
   }
   i.fa.fa-chevron-up{
