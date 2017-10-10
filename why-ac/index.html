@@ -9,6 +9,8 @@
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href=../ico.png />
+
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
@@ -26,10 +28,16 @@
         <![endif]-->
     <div class="navbar-fixed">
       <nav id="#about-nav" class="nav-center" role="navigation">
+        <ul id="aboutDropdown" class="dropdown-content">
+          <li><a href="../about-acea/">About</a></li>
+          <li class="divider"></li>
+          <li><a href="../investing/">Investment</a></li>
+        </ul>
         <div class="nav-wrapper">
           <a id="logo-container" href="../" class="brand-logo hide-on-med-and-down"><img src="../img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
-            <li><a href="../about-acea/">About ACEA</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="aboutDropdown" data-beloworigin="true">About ACEA</a></li>
             <li class="active"><a href="#">Why Atlantic County</a></li>
             <li><a href="../target-industries/">Target Industries</a></li>
             <li><a href="../business-support/">Business Support</a></li>
@@ -38,6 +46,7 @@
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
+            <li><a href="../">Home</a></li>
             <li><a href="../about-acea/">About ACEA</a></li>
             <li class="active"><a href="#">Why Atlantic County</a></li>
             <li><a href="../target-industries/">Target Industries</a></li>
@@ -78,7 +87,7 @@
 
     <div id="higher-education" class="section education-section">
       <div class="big-container">
-        <h1 class="subheader left-align">Higher Education</h1>
+        <h1 class="subheader">Higher Education</h1>
         <div class="row" style="margin-bottom:0;">
           <div class="col m6 s12">
             <p class="para">
@@ -108,7 +117,7 @@
                 <div class="collapsible-header subhead">Atlantic County Institute of Technology</div>
                 <div class="collapsible-body">
                   <p>
-                     is the most comprehensive technical education facility in Atlantic County. Situated on a 58-acre campus in the Hamilton Business Park in Mays Landing, the Institute of Technology offers students an innovative curriculum, which combines academic instruction, career technical education, internships, and structured work experiences designed to bridge the gap between classroom learning and workplace skills.
+                     Atlantic County Institute of Technology is the most comprehensive technical education facility in Atlantic County. Situated on a 58-acre campus in the Hamilton Business Park in Mays Landing, the Institute of Technology offers students an innovative curriculum, which combines academic instruction, career technical education, internships, and structured work experiences designed to bridge the gap between classroom learning and workplace skills.
                   </p>
                 </div>
               </li>
@@ -129,7 +138,7 @@
         <div class="row">
           <div class="col m6 s12">
             <div class="container">
-              <img src="../img/higher-education.jpg" alt="" class="responsive-img">
+              <img src="../img/quality-banner.jpg" alt="" class="responsive-img">
             </div>
           </div>
           <div class="col m6 s12">
@@ -147,10 +156,10 @@
                 </div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
+                    <div class="col m3 s12">
                       <img src="../img/boardwalk.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         Atlantic County boasts being one of the top destination spots for families along the Jersey Shore. From upscale beaches to world-famous entertainment, there’s something for everyone to enjoy along this small slice of the east coast. The Atlantic City beaches are famous, and rightly so. Everything you could possible want is right here within walking distance, from shops to five-star restaurants to casinos, attractions and great shows. If you want to enjoy the fun Atlantic City--minus the crowds and noise--Brigantine, Margate, Longport, and Ventnor City offer a family-friendly atmosphere just a short drive from the rides and entertainment of the Atlantic City boardwalk.
                       </p>
@@ -159,30 +168,30 @@
                 </div>
               </li>
               <!-- TRAVEL -->
-              <li>
+              <!-- <li>
                 <div class="collapsible-header subhead"><i class="fa fa-plane"></i>Travel</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
-                      <img src="../img/boardwalk.jpg" alt="" class="responsive-img">
+                    <div class="col m3 s12">
+                      <img src="../img/travel-banner.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         Atlantic County boasts being one of the top destination spots for families along the Jersey Shore. From upscale beaches to world-famous entertainment, there’s something for everyone to enjoy along this small slice of the east coast. The Atlantic City beaches are famous, and rightly so. Everything you could possible want is right here within walking distance, from shops to five-star restaurants to casinos, attractions and great shows. If you want to enjoy the fun Atlantic City--minus the crowds and noise--Brigantine, Margate, Longport, and Ventnor City offer a family-friendly atmosphere just a short drive from the rides and entertainment of the Atlantic City boardwalk.
                       </p>
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
               <!-- SHOPPING -->
               <li>
                 <div class="collapsible-header subhead"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Shopping</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
+                    <div class="col m3 s12">
                       <img src="../img/shopping.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         From the Tanger Outlet, The Walk in Atlantic City, to the boutique shops of Historic Mays Landing and downtown Hammonton, Atlantic County provides residents and visitors alike the very best retail experience available. On the world-famous Atlantic City Boardwalk, you’ll find AC staples like salt-water taffy or delicious fudge, souvenir stores, and specialty shops. Whether its high-end retail options or discounted brand-name fashions Atlantic County has it all and everything in between.
                       </p>
@@ -195,10 +204,10 @@
                 <div class="collapsible-header subhead"><i class="fa fa-money" aria-hidden="true"></i>Casinos and Gambling</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
+                    <div class="col m3 s12">
                       <img src="../img/casinos.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         It may come as no surprise that one of Atlantic City’s greatest draws is its casinos. Atlantic City gaming action comes in virtually every variety. From high-stakes poker table to penny slots there’s something fun for everyone.
                       </p>
@@ -211,10 +220,10 @@
                 <div class="collapsible-header subhead"><i class="fa fa-cutlery" aria-hidden="true"></i>Dining</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
+                    <div class="col m3 s12">
                       <img src="../img/dining.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         Home to wildly-extensive restaurant options, from well-known chain eateies to celebrity-chef destinations powered by the likes of Wolfgang Puck, Bobby Flay, Marc Forgione and Geoffrey Zakarian, it’s all on the menu in Atlantic County. The Atlantic City dining scene is so popular, there’s even an annual celebration of it every spring during Atlantic City Restaurant Week.
                       </p>
@@ -227,10 +236,10 @@
                 <div class="collapsible-header subhead"><i class="fa fa-paint-brush" aria-hidden="true"></i>Arts & Culture</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
+                    <div class="col m3 s12">
                       <img src="../img/arts.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         Atlantic County is abound with a selection of arts and culture. The proof is in the art galleries, museums, wineries, and cultural events. Located in the heart of Downtown Hammonton is the Arts District which includes The Stockton College Noyes Museum and the Hammonton Arts Center both features fine arts, such as painting and sculpting and classes and workshops while the historic Eagle Theatre hosts professional and community performances every weekend.
                       </p>
@@ -239,14 +248,14 @@
                 </div>
               </li>
               <!-- Wildlife -->
-              <li>
+              <!-- <li>
                 <div class="collapsible-header subhead"><i class="fa fa-binoculars" aria-hidden="true"></i>Wildlife</div>
                 <div class="collapsible-body">
                   <div class="row">
-                    <div class="col s3">
-                      <img src="../img/boardwalk.jpg" alt="" class="responsive-img">
+                    <div class="col m3 s12">
+                      <img src="../img/wildlife-banner.jpg" alt="" class="responsive-img">
                     </div>
-                    <div class="col s9">
+                    <div class="col m9 s12">
                       <p>
                         Apiendem quatias erum eiuscip sanienim fuga. Aqui od moditatem lacea doluptae res
                         ea cum sinum aliquidic te maximi, sequae et aut aut reria cus consequi arunt quo odici
@@ -256,7 +265,7 @@
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -267,7 +276,7 @@
       <h1 class="subheader center-align">Case Studies</h1>
       <div class="container">
         <div class="row">
-          <div class="col s4">
+          <div class="col s12 m4">
               <div class="card small">
                 <!-- Card Content -->
                 <a class="hvr-grow"href="../img/tomasello-p.pdf" target="_blank">
@@ -279,7 +288,7 @@
               </div>
 
           </div>
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <!-- Card Content -->
               <a class="hvr-grow"href="../img/tackledirect-p.pdf" target="_blank">
@@ -294,7 +303,7 @@
               </div> -->
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <!-- Card Content -->
               <a class="hvr-grow"href="../img/teligent-p.pdf" target="_blank">
@@ -309,7 +318,7 @@
               </div> -->
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <!-- Card Content -->
               <a class="hvr-grow"href="../img/comar-p.pdf" target="_blank">
@@ -320,7 +329,7 @@
               </a>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <!-- Card Content -->
               <a class="hvr-grow"href="../img/sartp-p.pdf" target="_blank">
@@ -329,10 +338,6 @@
                 <span class="card-title">SARTP</span>
               </div>
               </a>
-              <!-- <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div> -->
             </div>
           </div>
         </div>
@@ -387,6 +392,10 @@
           $('.collapsible').collapsible();
 
         });
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+          });
         </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>

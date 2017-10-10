@@ -8,7 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="apple-touch-icon" href="../icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href=../ico.png />
+
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
@@ -26,10 +28,16 @@
         <![endif]-->
     <div class="navbar-fixed">
       <nav id="#about-nav" class="nav-center" role="navigation">
+        <ul id="aboutDropdown" class="dropdown-content">
+          <li><a href="../about-acea/">About</a></li>
+          <li class="divider"></li>
+          <li><a href="../investing/">Investment</a></li>
+        </ul>
         <div class="nav-wrapper">
           <a id="logo-container" href="../" class="brand-logo hide-on-med-and-down"><img src="../img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
-            <li><a href="../about-acea/">About ACEA</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="aboutDropdown" data-beloworigin="true">About ACEA</a></li>
             <li><a href="../why-ac/">Why Atlantic County</a></li>
             <li class="active"><a href="#">Target Industries</a></li>
             <li><a href="../business-support/">Business Support</a></li>
@@ -38,6 +46,7 @@
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
+            <li><a href="../">Home</a></li>
             <li><a href="../about-acea/">About ACEA</a></li>
             <li><a href="../why-ac/">Why Atlantic County</a></li>
             <li class="active"><a href="#">Target Industries</a></li>
@@ -98,7 +107,7 @@
 
     <div id="target-industries-two" class="section target-industries">
       <div class="big-container">
-        <h1 class="subheader left-align">Aerospace & Aviation</h1>
+        <h1 class="subheader">Aerospace & Aviation</h1>
         <div class="row" style="margin-bottom:0;">
           <div class="col m6 s12">
             <p class="para">
@@ -178,7 +187,7 @@
 
     <div id="target-industries-four" class="target-industries">
       <div class="big-container">
-        <h1 class="subheader left-align">Tourism</h1>
+        <h1 class="subheader">Tourism</h1>
         <div class="row" style="margin-bottom:0;">
           <div class="col m6 s12">
             <h3 class="subhead">Competitive Assets as identified in the Atlantic County Economic Development Strategy and Action Plan:</h3>
@@ -217,7 +226,7 @@
 
     <div id="target-industries-five" class="section target-industries">
       <div class="big-container">
-        <h1 class="subheader left-align">Speciality Manufacturing</h1>
+        <h1 class="subheader">Speciality Manufacturing</h1>
         <div class="row" style="margin-bottom:0;">
           <div class="col m6 s12">
             <p class="para">
@@ -298,27 +307,30 @@
 
     <div id="target-industries-seven" class="target-industries">
       <div class="big-container">
-        <h1 class="subheader left-align">Food & Agriculture</h1>
+        <h1 class="subheader">Food & Agriculture</h1>
         <div class="row" style="margin-bottom:0;">
           <div class="col m6 s12">
             <h3 class="subhead">Competitive Assets as identified in the Atlantic County Economic Development Strategy and Action Plan:</h3>
             <ul class="collapsible" data-collapsible="accordion">
               <li>
-                <div class="collapsible-header subhead active"> - Proximity to ocean/marine life</div>
+                <div class="collapsible-header subhead active"> - Natural assets and resources</div>
               </li>
               <li>
-                <div class="collapsible-header subhead"> - Specialty agriculture</div>
+                <div class="collapsible-header subhead"> - Pristine water and naturally growing plants</div>
               </li>
               <li>
-                <div class="collapsible-header subhead">- Educational facilities and program development</div>
+                <div class="collapsible-header subhead">- Farming and agriculture</div>
               </li>
               <li>
-                <div class="collapsible-header subhead">- Strong medical facilities</div>
+                <div class="collapsible-header subhead">- Wineries and Breweries</div>
               </li>
               <li>
                 <div class="collapsible-header subhead">- Affordable real estate</div>
               </li>
             </ul>
+
+
+
           </div>
           <div class="col m6 s12">
             <p class="para">
@@ -330,6 +342,34 @@
         </div>
       </div>
     </div>
+
+    <footer class="page-footer">
+      <div class="hide-on-small-and-down">
+        <div class="row">
+          <div class="col l2 s12">
+          </div>
+          <div class="col l8 offset-l2 s12">
+            <ul class="foot-links">
+              <li><a href="../about-acea/">About ACEA</a></li>
+              <li><a href="../why-ac/">Why Atlantic County</a></li>
+              <li><a href="#">Target Industries</a></li>
+              <li><a href="../business-support/">Business Support</a></li>
+              <li><a href="../resources-and-data/">Resources & Data</a></li>
+              <li><a href="../contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Element Showed -->
+
+      <div class="footer-copyright">
+        <img class="responsive-img logo-left" src="../img/logo.png" alt="">
+        <div class="big-container">
+        <!-- <a class="valign-wrapper right" href="#!">Made with  <img class="love" src="img/love.png" alt=""></a> -->
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -351,6 +391,10 @@
           // $('.tap-target').tapTarget('close');
 
         });
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+          });
         </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>

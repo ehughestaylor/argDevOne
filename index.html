@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href=ico.png />
+
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
@@ -25,10 +27,17 @@
         <![endif]-->
     <div class="navbar-fixed">
       <nav id="#home-nav" class="nav-center" role="navigation">
+        <!-- Dropdown Structure -->
+        <ul id="aboutDropdown" class="dropdown-content">
+          <li><a href="about-acea/">About</a></li>
+          <li class="divider"></li>
+          <li><a href="investing/">Investment</a></li>
+        </ul>
+        <nav>
         <div class="nav-wrapper">
           <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down"><img src="img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
-            <li><a href="about-acea/">About ACEA</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="aboutDropdown" data-beloworigin="true">About ACEA</a></li>
             <li><a href="why-ac/">Why Atlantic County</a></li>
             <li><a href="target-industries/">Target Industries</a></li>
             <li><a href="business-support/">Business Support</a></li>
@@ -38,6 +47,7 @@
 
           <ul id="nav-mobile" class="side-nav">
             <li><a href="about-acea/">About ACEA</a></li>
+            <li><a href="investing/">Investment</a></li>
             <li><a href="why-ac/">Why Atlantic County</a></li>
             <li><a href="target-industries/">Target Industries</a></li>
             <li><a href="business-support/">Business Support</a></li>
@@ -102,7 +112,7 @@
               </div>
               <div class="card-reveal">
                 <span class="card-title white-text">New Aviation School at AC Airport<i class="fa fa-close white-text close-card"></i></span>
-                <p>Atlantic City International Airport will soon be the home of a new aviation maintenance academy.</p>
+                <p>AC Airport will soon be the home of a new aviation maintenance academy.</p>
                 <a href="http://www.pressofatlanticcity.com/news/atlantic-county-plans-for-new-aviation-school-at-ac-airport/article_6c0b30cc-e194-5f00-b35e-6a53af41cb54.html" target="_blank"><div class="btn btn-small">Read More</div></a>
               </div>
             </div>
@@ -129,14 +139,14 @@
 
     <div id="about-banner" class="section">
       <div class="section" id="topSectionAbout">
-        <i class="fa fa-chevron-up"></i>
+        <i class="fa fa-chevron-up hide-on-small-and-down"></i>
         <div class="container">
           <h5 class="acnj hide-on-med-and-down">Atlantic County, NJ</h5>
           <div class="h1 left-align white-text header">About <u>ACEA</u></div>
           <div class="row">
             <div class="col m8 s12 text-para">
               <p class="left-align">The Atlantic County Economic Alliance, a private sector directed, nonprofit economic development corporation that was established to  business attraction, retention, and marketing efforts in Atlantic County.</p>
-              <a href="about-acea/" id="#" class="button-w hvr-shadow waves-effect">Learn More</a>
+              <a href="about-acea/" id="#" class="button-w hvr-push waves-effect">Learn More</a>
             </div>
             <div class="greyTriangle hide-on-med-and-down">
               <img class="responsive-img" src="img/aboutSectionTriangles.png" alt="">
@@ -167,11 +177,19 @@
                         <li class="hvr-grow"><a href="why-ac/"><i class="fa white-text fa-thumbs-up"></i></a></li>
                         <p>quality of life</p>
                       </div>
+                      <div class="ico-group quality">
+                        <li class="hvr-grow"><a href="why-ac/"><i class="fa white-text fa-paint-brush"></i></a></li>
+                        <p>arts & culture</p>
+                      </div>
+                      <div class="ico-group quality">
+                        <li class="hvr-grow"><a href="why-ac/"><i class="fa white-text fa-binoculars"></i></a></li>
+                        <p>wild life</p>
+                      </div>
                     </ul>
                   </div>
                 </div>
                 <p class="para">Whether you are interested in starting a business, relocating, or expanding your business, Atlantic County, New Jersey offers a wealth of opportunities among its 567 square miles. Located between lush farmlands and 14 miles of sandy shorelines, Atlantic County is within a short distance of Philadelphia, New York City and Washington, DC with easy access by car, bus, rail or air. Let us show you why Atlantic County is the best address for business.</p>
-                <a href="resources-and-data/"><div id="" class="button-solid">See Municipality Data</div></a>
+                <a href="resources-and-data/" class="hvr-push"><div id="" class="button-solid">See Municipality Data</div></a>
               </div>
             </div>
           </div>
@@ -216,7 +234,7 @@
                           </ul>
                         </div> -->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -259,7 +277,7 @@
                           </ul>
                         </div>-->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -302,7 +320,7 @@
                           </ul>
                         </div>-->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -345,7 +363,7 @@
                           </ul>
                         </div> -->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -387,7 +405,7 @@
                           </ul>
                         </div> -->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -430,7 +448,7 @@
                           </ul>
                         </div> -->
                       </div>
-                      <div class="col m2">
+                      <div class="col m4">
                         <a class="white-text" href="target-industries/"><u>More Info</u></a>
                       </div>
                     </div>
@@ -448,7 +466,7 @@
       <div class="row">
         <div class="col s12 m12">
           <div class="big-container">
-            <h1 class="header white-text">Business Services</h1>
+            <h1 class="header white-text">Business Support</h1>
             <h5 class="subheader white-text"><i>What can we do for <u>you</u></i></h5>
           </div>
             <div class="row center-align step-group">
@@ -456,16 +474,18 @@
               <div class="col m1 step-col s4 hvr-bounce-to-top step-two"><h2 class="number">2</h2><h2 class="stepTitle step-title-two">Permits & Regulations</h2></div>
               <div class="col m1 step-col s4 hvr-bounce-to-top step-three"><h2 class="number">3</h2><h2 class="stepTitle step-title-three">Networking</h2></div>
               <div class="col m1 step-col s4 hvr-bounce-to-top step-four"><h2 class="number">4</h2><h2 class="stepTitle step-title-four">Data Requests</h2></div>
-              <div class="col m1 step-col s4 hvr-bounce-to-top step-five"><h2 class="number">5</h2><h2 class="stepTitle step-title-five">Workforce assitance</h2></div>
-              <div class="col m1 step-col s4 hvr-bounce-to-top step-six"><h2 class="number">6</h2><h2 class="stepTitle step-title-six">Financing assistance</h2></div>
-              <div class="col m1 step-col s4 hvr-bounce-to-top step-seven"><h2 class="number">7</h2><h2 class="stepTitle step-title-seven">Promote your success</h2></div>
+              <div class="col m1 step-col s4 hvr-bounce-to-top step-five"><h2 class="number">5</h2><h2 class="stepTitle step-title-five">Workforce Assitance</h2></div>
+              <div class="col m1 step-col s4 hvr-bounce-to-top step-six"><h2 class="number">6</h2><h2 class="stepTitle step-title-six">Financing Assistance</h2></div>
+              <div class="col m1 step-col s4 hvr-bounce-to-top step-seven"><h2 class="number">7</h2><h2 class="stepTitle step-title-seven">Promote your Success</h2></div>
             </div>
             <div class="big-container">
               <div class="row step-desc">
                 <div class="col m5 s12">
                   <h5 class="subhead">Site Selection</h5>
                   <p class="about-service">The ACEA provides prompt response and identification of available commercial, office, industrial and developable land requests tailored to your specifications and requirements.  The ACEA acts as your liaison with brokers for follow up information requests while maintaining strict confidentiality until your firm is ready to engage in actual site visits.  Our staff is available to accompany you on site visits and provide insight and assistance throughout the process.</p>
-                  <div id="download-pdf" class="button-solid">PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
+                  <a class="hvr-push" href="http://www.acbiz.org/Doing%20Business/pdf/Destination-AC-city-of-atlantic-city-dept-planning-development.pdf" target="_blank">
+                    <div id="download-pdf" class="button-solid">Download PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></div>
+                  </a>
                 </div>
                 <div class="graphic">
                   <img class="responsive-img" src="img/building-vector2.png" alt="">
@@ -482,18 +502,18 @@
           <div class="row data-row">
             <div class="col s12">
               <ul class="tabs">
-                <li class="tab col s12 m3"><a href="#test1"><h1>#1</h1></a></li>
-                <li class="tab col s12 m3"><a class="active" href="#test2"><h1>#1</h1></a></li>
-                <li class="tab col s12 m3"><a href="#test3"><h1>#1</h1></a></li>
-                <li class="tab col s12 m3"><a href="#test4"><h1>#1</h1></a></li>
+                <li class="tab col s12 m3"><a class="hvr-push" href="#test1"><h1 style="font-size:25px; text-transform:none;">1hr</h1></a></li>
+                <li class="tab col s12 m3"><a class="active hvr-push" href="#test2"><h1 style="font-size:20px; text-transform:none;">25 million</h1></a></li>
+                <li class="tab col s12 m3"><a class="hvr-push" href="#test3"><h1>561</h1></a></li>
+                <li class="tab col s12 m3"><a class="hvr-push" href="#test4"><h1 style="font-size:20px; text-transform:none;">21,211</h1></a></li>
               </ul>
             </div>
-            <div id="test1" class="col s12 center-align">Something About Stat 1</div>
-            <div id="test2" class="col s12 center-align">Something About Stat 2</div>
-            <div id="test3" class="col s12 center-align">Something About Stat 3</div>
-            <div id="test4" class="col s12 center-align">Something About Stat 4</div>
+            <div id="test1" class="col s12 center-align">1 hr / drive resides 3.7 Million people</div>
+            <div id="test2" class="col s12 center-align">25 million tourists annually</div>
+            <div id="test3" class="col s12 center-align">561 square miles of 60% forest, fields and marsh, and 15% pristine waters</div>
+            <div id="test4" class="col s12 center-align">21,211 companies</div>
           </div>
-          <h3 class="header center"><a href="#">Dept. of Labor & Workforce Data</a></h3>
+          <h3 class="header center"><a href="http://lwd.dol.state.nj.us/labor/lpa/content/njsdc_index.html" target="_blank">Dept. of Labor & Workforce Data</a></h3>
 
         </div>
       </div>
@@ -505,12 +525,12 @@
             <div class="col m5 s12">
               <h5 class="real-estate"><u>Real Estate</u></h5>
               <h1 class="header">Your business will <i>soar</i></h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit officia eum quam amet placeat, iste explicabo. Aliquam maiores cumque quod quae, possimus porro voluptate laborum vitae eligendi voluptates hic.</p>
+              <p>From the urban landscape of Atlantic City, to the farmland of Mays Landing, Atlantic County is a great area for office space. Check out the brand new Aviation Research and Technology Park or any of the other regularly updated listings from Colliers Real estate.</p>
             </div>
             <div class="col m7 s12">
-              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-1-p.pdf"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate1.jpg" alt="" class="responsive-img real-estate-img"></a></div>
-              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-2-p.pdf"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate2.jpg" alt="" class="responsive-img real-estate-img"></a></div>
-              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-3-p.pdf"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate3.jpg" alt="" class="responsive-img real-estate-img"></a></div>
+              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-1-p.pdf" target="_blank"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate1.jpg" alt="" class="responsive-img real-estate-img"></a></div>
+              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-2-p.pdf" target="_blank"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate2.jpg" alt="" class="responsive-img real-estate-img"></a></div>
+              <div class="col s6 m6 l6 listing"><a class="hvr-push" href="img/estate-3-p.pdf" target="_blank"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate3.jpg" alt="" class="responsive-img real-estate-img"></a></div>
               <!-- <div class="col s6 m6 l4 listing"><img class="top-right" src="img/corner-tri.png" alt=""><img src="img/estate4.jpg" alt="" class="responsive-img real-estate-img"></div> -->
             </div>
           </div>
@@ -527,21 +547,32 @@
                   </div>
                   <div class="col s12 m6">
                     <h1 class="header center-align">
-                      <a class="white-text social-icon" href=""><i class="fa fa-phone"></i></a>
-                      <a class="white-text social-icon" href=""><i class="fa fa-facebook"></i></a>
-                      <a class="white-text social-icon" href=""><i class="fa fa-linkedin"></i></a>
-                      <a class="white-text social-icon" href=""><i class="fa fa-envelope-o"></i></a>
+                      <a class="white-text social-icon hvr-shadow" href=""><i class="fa fa-phone"></i></a>
+                      <a class="white-text social-icon hvr-shadow" href=""><i class="fa fa-facebook"></i></a>
+                      <a class="white-text social-icon hvr-shadow" href=""><i class="fa fa-linkedin"></i></a>
+                      <a class="white-text social-icon hvr-shadow" href="mailto:mailto:lmoore@aceanj.com"><i class="fa fa-envelope-o"></i></a>
                     </h1>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col s12 m6 white right-col valign-wrapper" style="position:relative;">
-              <i class="fa fa-chevron-up"></i>
+              <i class="fa fa-chevron-up hide-on-small-and-down"></i>
 
               <div class="row row-right valign-wrapper">
-                <div class="col s12 m6"><img class="responsive-img" src="img/contact.png" alt=""></div>
-                <div class="col s12 m6"><div class="button-c">? Questions</div></div>
+                <div id="point-of-contact" class="col m6 s12">
+                  <div class="">
+                    <p class="name">Lauren H. Moore</p>
+                    <p class="para">Executive Director</p>
+                    <p class="para"><a href="mailto:lmoore@aceanj.com">lmoore@aceanj.com</a></p>
+
+                    <p class="name blue-text">Atlantic County Economic Alliance</p>
+                    <p class="para">2009-B Hamilton Mall</p>
+                    <p class="para">4403 E. Black Horse Pike</p>
+                    <p class="para">Mays Landing, NJ 08330</p>
+                  </div>
+                </div>
+                <div class="col s12 m6"><a class="hvr-push" href="contact/"><div class="button-c">Questions</div></a></div>
               </div>
             </div>
         </div>
@@ -585,6 +616,27 @@
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+          }
+          );
+          $('.card').hover(
+              function() {
+                  $(this).find('> .card-image > img.activator').click();
+              }, function() {
+                  $(this).find('> .card-reveal > .card-title').click();
+              }
+          );
+          var options = [
+            {selector: '#data-section', offset: 300, callback: function(el) {
+              Materialize.toast("Be sure to click on our interactive statistics!", 4500 );
+            } },
+          ];
+          Materialize.scrollFire(options);
+
+        </script>
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')

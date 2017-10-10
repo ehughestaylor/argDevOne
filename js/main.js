@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.carousel.carousel-slider').carousel({fullWidth: true});
-  window.setInterval(function(){$('.carousel').carousel('next')},5000)
+  window.setInterval(function(){$('.carousel').carousel('next')},9000)
   $(".button-collapse").sideNav();
   $('.tooltipped').tooltip({delay: 50});
   $('.parallax').parallax();
@@ -32,7 +32,7 @@ $(document).ready(function(){
       $('.subhead').text($('.step-title-one').text());
 
     } else if($(this).is( ".step-two" )){
-      $('.about-service').text('he ACEA coordinates contact with municipal, county, and state agencies; including planning and zoning committees, environmental oversight boards and permit inspection professionals.  Our staff is available to assist you in working with state and federal regulatory agencies and meeting their requirements.');
+      $('.about-service').text('The ACEA coordinates contact with municipal, county, and state agencies; including planning and zoning committees, environmental oversight boards and permit inspection professionals.  Our staff is available to assist you in working with state and federal regulatory agencies and meeting their requirements.');
       $('.subhead').text($('.step-title-two').text());
     }
     else if($(this).is( ".step-three" )){

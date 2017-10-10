@@ -9,6 +9,7 @@
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
+        <link rel="shortcut icon" type="image/x-icon" href=../ico.png />
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
@@ -25,11 +26,17 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <div class="navbar-fixed">
+      <ul id="aboutDropdown" class="dropdown-content">
+        <li class="active"><a href="#">About</a></li>
+        <li class="divider"></li>
+        <li><a href="../investing/">Investment</a></li>
+      </ul>
       <nav id="#about-nav" class="nav-center" role="navigation">
         <div class="nav-wrapper">
           <a id="logo-container" href="../" class="brand-logo hide-on-med-and-down"><img src="../img/logo.png" alt="" class="responsive-img"></a>
           <ul class="hide-on-med-and-down">
-            <li class="active"><a href="#">About ACEA</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="aboutDropdown" data-beloworigin="true">About ACEA</a></li>
             <li><a href="../why-ac/">Why Atlantic County</a></li>
             <li><a href="../target-industries/">Target Industries</a></li>
             <li><a href="../business-support/">Business Support</a></li>
@@ -38,6 +45,7 @@
           </ul>
 
           <ul id="nav-mobile" class="side-nav">
+            <li><a href="../">Home</a></li>
             <li class="active"><a href="#">About ACEA</a></li>
             <li><a href="../why-ac/">Why Atlantic County</a></li>
             <li><a href="../target-industries/">Target Industries</a></li>
@@ -182,6 +190,7 @@
           </div>
           <div class="col l8 offset-l2 s12">
             <ul class="foot-links">
+              <li><a href="../">Home</a></li>
               <li><a href="#">About ACEA</a></li>
               <li><a href="../why-ac/">Why Atlantic County</a></li>
               <li><a href="../target-industries/">Target Industries</a></li>
@@ -221,6 +230,10 @@
           $('.tooltipped').tooltip({delay: 50});
           $('.parallax').parallax();
         });
+        $('.dropdown-button').dropdown({
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+          });
         </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
