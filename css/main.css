@@ -640,6 +640,12 @@ body {
       position: absolute;
       opacity: 0.6; }
 
+#real-estate-text {
+  padding-left: 2em; }
+  #real-estate-text p {
+    font-family: "PT Serif", serif;
+    letter-spacing: 1.31; }
+
 #contact-section {
   position: relative; }
   #contact-section i.fa.fa-chevron-up {
@@ -737,7 +743,10 @@ body {
     text-align: left;
     color: white;
     font-family: "PT Serif", serif;
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  #real-estate-text {
+    padding-left: 1em; } }
 .internal-page nav {
   background: white; }
   .internal-page nav .brand-logo img {

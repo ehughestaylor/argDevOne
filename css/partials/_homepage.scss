@@ -627,6 +627,14 @@ body {
     }
   }
 }
+#real-estate-text{
+  padding-left: 2em;
+  p{
+    font-family: $base-font-family;
+    letter-spacing: 1.31;
+
+  }
+}
 
 #contact-section{
   // background-color: $blue;
@@ -770,4 +778,8 @@ body {
     font-family: "PT Serif", serif;
     font-size: 1em;
   }
+  //real estate
+    #real-estate-text{
+      padding-left: 1em;
+    }
 }
