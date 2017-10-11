@@ -981,13 +981,15 @@ a.waves-effect.waves-light.btn.btn-floating.btn-large.cyan.tap-target-origin {
       color: white;
       height: 130px;
       border-radius: 100%;
-      width: 130px;
+      width: 100%;
       padding-top: 31px;
       margin: 1em;
-      margin-bottom: 4em;
+      /* margin-bottom: 4em; */
+
       h4{
         font-size: 14px;
-        // line-height: 130px;
+        width: 127px;
+        line-height: 18px;
       }
     }
     .circle-yellow{

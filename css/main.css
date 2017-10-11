@@ -1439,12 +1439,14 @@ body {
   color: white;
   height: 130px;
   border-radius: 100%;
-  width: 130px;
+  width: 100%;
   padding-top: 31px;
   margin: 1em;
-  margin-bottom: 4em; }
+  /* margin-bottom: 4em; */ }
   .invest-body #invest-two .circle-left h4 {
-    font-size: 14px; }
+    font-size: 14px;
+    width: 127px;
+    line-height: 18px; }
 .invest-body #invest-two .circle-yellow {
   background-color: #FFB700; }
 .invest-body #invest-two .circle-turq {
