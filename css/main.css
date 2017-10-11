@@ -1075,7 +1075,7 @@ body {
   font-size: 14px; }
 .internal-page #target-industries-five .para {
   color: #00274D;
-  font-size: 17px;
+  font-size: 15px;
   font-family: "PT Serif", serif;
   font-style: normal; }
 .internal-page #target-industries-six {
@@ -1114,6 +1114,12 @@ body {
     font-family: "PT Serif", serif; }
 .internal-page #target-industries-seven .subheader {
   text-align: left; }
+.internal-page #target-industries-seven .para {
+  text-align: left;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Serif", serif; }
 
 .business-body #business-one {
   background-color: #00274D;
